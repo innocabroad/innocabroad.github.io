@@ -105,7 +105,6 @@ theme: hexo-theme-bamboo
   type: git
   repo: https://github.com/innocabroad/innocence.github.io.git
   branch: main   
-  token: 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
 search: 
   path: search.xml
   field: post
