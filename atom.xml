@@ -6,7 +6,7 @@
   <link href="http://innocence.github.io/atom.xml" rel="self"/>
   
   <link href="http://innocence.github.io/"/>
-  <updated>2022-09-11T07:08:53.609Z</updated>
+  <updated>2022-09-11T09:58:03.144Z</updated>
   <id>http://innocence.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SPSS K均值聚类（k-means）和可视化方法</title>
+    <link href="http://innocence.github.io/2022/09/11/spss-k-jun-zhi-ju-lei-k-means-he-ke-shi-hua-fang-fa/"/>
+    <id>http://innocence.github.io/2022/09/11/spss-k-jun-zhi-ju-lei-k-means-he-ke-shi-hua-fang-fa/</id>
+    <published>2022-09-11T09:55:30.000Z</published>
+    <updated>2022-09-11T09:58:03.144Z</updated>
+    
+    <content type="html"><![CDATA[<!-- 在markdown中为了方便 可以不用加闭合标签 --><center><font face="华文行楷">大标题</font><h1 id="一级标签"><a href="#一级标签" class="headerlink" title="一级标签"></a><mark><font face="华文彩云" color=red>一级标签</h1><h2 id="amp-emsp-amp-emsp-🍤"><a href="#amp-emsp-amp-emsp-🍤" class="headerlink" title="&amp;emsp;&amp;emsp; 🍤"></a>&amp;emsp;&amp;emsp; <font face="华文黑体" color=#7D00FF>🍤</h2><p>&amp;emsp;&amp;emsp;首行缩进</p><table><tr><td bgcolor=#E6D5B8><font size=3>表格中的颜色块</td></tr></table><ul><li><input checked="" disabled="" type="checkbox"> <strong>小方面</strong>  <ul><li><input disabled="" type="checkbox"> $a.$ 小方面细化：</li></ul></li></ul><p align="right">右对齐</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;!-- 在markdown中为了方便 可以不用加闭合标签 --&gt;
+
+&lt;center&gt;&lt;font face=&quot;华文行楷&quot;&gt;大标题&lt;/font&gt;
+
+&lt;h1 id=&quot;一级标签&quot;&gt;&lt;a href=&quot;#一级标签&quot; class=&quot;headerlink&quot; title=&quot;一级标签&quot;&gt;&lt;/a&gt;&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>测试文章文件夹</title>
