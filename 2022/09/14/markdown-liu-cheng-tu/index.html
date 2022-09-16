@@ -689,8 +689,7 @@
     <article class="post post-detail">
       <div class="post-content">
         <h2 class="bamboo-h " id="横向流程图源码格式">横向流程图源码格式</h2><br/>
-
-<p>graph LR<br>A[方形] –&gt;B(圆角)<br>    B –&gt; C{条件a}<br>    C –&gt;|a&#x3D;1| D[结果1]<br>    C –&gt;|a&#x3D;2| E[结果2]<br>    F[横向流程图]</p>
+<p>mermaid<br>graph LR<br>A[方形] –&gt;B(圆角)<br>    B –&gt; C{条件a}<br>    C –&gt;|a&#x3D;1| D[结果1]<br>    C –&gt;|a&#x3D;2| E[结果2]<br>    F[横向流程图]</p>
 <pre class="mermaid">graph LR
 A[方形] -->B(圆角)
     B --> C{条件a}
@@ -699,7 +698,7 @@ A[方形] -->B(圆角)
     F[横向流程图]</pre>
 
 <h2 class="bamboo-h " id="竖向流程图源码格式">竖向流程图源码格式</h2><br/>
-<p>graph TD<br>A[方形] –&gt; B(圆角)<br>    B –&gt; C{条件a}<br>    C –&gt; |a&#x3D;1| D[结果1]<br>    C –&gt; |a&#x3D;2| E[结果2]<br>    F[竖向流程图]</p>
+<p>mermaid<br>graph TD<br>A[方形] –&gt; B(圆角)<br>    B –&gt; C{条件a}<br>    C –&gt; |a&#x3D;1| D[结果1]<br>    C –&gt; |a&#x3D;2| E[结果2]<br>    F[竖向流程图]</p>
 <pre class="mermaid">graph TD
 A[方形] --> B(圆角)
     B --> C{条件a}
@@ -709,28 +708,26 @@ A[方形] --> B(圆角)
 
 
 <h2 class="bamboo-h " id="标准流程图源码格式">标准流程图源码格式</h2><br/>
-
-<p>st&#x3D;&gt;start: 开始框<br>op&#x3D;&gt;operation: 处理框<br>cond&#x3D;&gt;condition: 判断框(是或否?)<br>sub1&#x3D;&gt;subroutine: 子流程<br>io&#x3D;&gt;inputoutput: 输入输出框<br>e&#x3D;&gt;end: 结束框<br>st-&gt;op-&gt;cond<br>cond(yes)-&gt;io-&gt;e<br>cond(no)-&gt;sub1(right)-&gt;op</p>
+<p>flow<br>st&#x3D;&gt;start: 开始框<br>op&#x3D;&gt;operation: 处理框<br>cond&#x3D;&gt;condition: 判断框(是或否?)<br>sub1&#x3D;&gt;subroutine: 子流程<br>io&#x3D;&gt;inputoutput: 输入输出框<br>e&#x3D;&gt;end: 结束框<br>st-&gt;op-&gt;cond<br>cond(yes)-&gt;io-&gt;e<br>cond(no)-&gt;sub1(right)-&gt;op</p>
 <div id="flowchart-0" class="flow-chart"></div>
 
 <h2 class="bamboo-h " id="标准流程图源码格式（横向）">标准流程图源码格式（横向）</h2><br/>
-
-<p>st&#x3D;&gt;start: 开始框<br>op&#x3D;&gt;operation: 处理框<br>cond&#x3D;&gt;condition: 判断框(是或否?)<br>sub1&#x3D;&gt;subroutine: 子流程<br>io&#x3D;&gt;inputoutput: 输入输出框<br>e&#x3D;&gt;end: 结束框<br>st(right)-&gt;op(right)-&gt;cond<br>cond(yes)-&gt;io(bottom)-&gt;e<br>cond(no)-&gt;sub1(right)-&gt;op</p>
+<p>flow<br>st&#x3D;&gt;start: 开始框<br>op&#x3D;&gt;operation: 处理框<br>cond&#x3D;&gt;condition: 判断框(是或否?)<br>sub1&#x3D;&gt;subroutine: 子流程<br>io&#x3D;&gt;inputoutput: 输入输出框<br>e&#x3D;&gt;end: 结束框<br>st(right)-&gt;op(right)-&gt;cond<br>cond(yes)-&gt;io(bottom)-&gt;e<br>cond(no)-&gt;sub1(right)-&gt;op</p>
 <div id="flowchart-1" class="flow-chart"></div>
 
 
 <h2 class="bamboo-h " id="UML时序图源码样例">UML时序图源码样例</h2><br/>
-
-<p>对象A-&gt;对象B: 对象B你好吗?（请求）<br>Note right of 对象B: 对象B的描述<br>Note left of 对象A: 对象A的描述(提示)<br>对象B–&gt;对象A: 我很好(响应)<br>对象A-&gt;对象B: 你真的好吗？</p>
+<p>sequence<br>对象A-&gt;对象B: 对象B你好吗?（请求）<br>Note right of 对象B: 对象B的描述<br>Note left of 对象A: 对象A的描述(提示)<br>对象B–&gt;对象A: 我很好(响应)<br>对象A-&gt;对象B: 你真的好吗？</p>
 <div id="sequence-0"></div>
 
 <h2 class="bamboo-h " id="UML时序图源码复杂样例">UML时序图源码复杂样例</h2><br/>
-<p>Title: 标题：复杂使用<br>对象A-&gt;对象B: 对象B你好吗?（请求）<br>Note right of 对象B: 对象B的描述<br>Note left of 对象A: 对象A的描述(提示)<br>对象B–&gt;对象A: 我很好(响应)<br>对象B-&gt;小三: 你好吗<br>小三–&gt;&gt;对象A: 对象B找我了<br>对象A-&gt;对象B: 你真的好吗？<br>Note over 小三,对象B: 我们是朋友<br>participant C<br>Note right of C: 没人陪我玩</p>
+<p>sequence<br>Title: 标题：复杂使用<br>对象A-&gt;对象B: 对象B你好吗?（请求）<br>Note right of 对象B: 对象B的描述<br>Note left of 对象A: 对象A的描述(提示)<br>对象B–&gt;对象A: 我很好(响应)<br>对象B-&gt;小三: 你好吗<br>小三–&gt;&gt;对象A: 对象B找我了<br>对象A-&gt;对象B: 你真的好吗？<br>Note over 小三,对象B: 我们是朋友<br>participant C<br>Note right of C: 没人陪我玩</p>
 <div id="sequence-1"></div>
 
 
 <h2 class="bamboo-h " id="UML标准时序图样例">UML标准时序图样例</h2><br/>
-<p>%% 时序图例子,-&gt; 直线，–&gt;虚线，-&gt;&gt;实线箭头<br>  sequenceDiagram<br>    participant 张三<br>    participant 李四<br>    张三-&gt;王五: 王五你好吗？<br>    loop 健康检查<br>        王五-&gt;王五: 与疾病战斗<br>    end<br>    Note right of 王五: 合理 食物 <br/>看医生…<br>    李四–&gt;&gt;张三: 很好!<br>    王五-&gt;李四: 你怎么样?<br>    李四–&gt;王五: 很好!</p>
+
+<p>mermaid<br>%% 时序图例子,-&gt; 直线，–&gt;虚线，-&gt;&gt;实线箭头<br>  sequenceDiagram<br>    participant 张三<br>    participant 李四<br>    张三-&gt;王五: 王五你好吗？<br>    loop 健康检查<br>        王五-&gt;王五: 与疾病战斗<br>    end<br>    Note right of 王五: 合理 食物 <br/>看医生…<br>    李四–&gt;&gt;张三: 很好!<br>    王五-&gt;李四: 你怎么样?<br>    李四–&gt;王五: 很好!</p>
 <pre class="mermaid">%% 时序图例子,-> 直线，-->虚线，->>实线箭头
   sequenceDiagram
     participant 张三
@@ -746,7 +743,8 @@ A[方形] --> B(圆角)
 
 
 <h2 class="bamboo-h " id="甘特图样例">甘特图样例</h2><br/>
-<p>gantt<br>dateFormat YYYY-MM-DD<br>title Adding GANTT diagram functionality to mermaid<br>section 现有任务<br>已完成 :done, des1, 2014-01-06,2014-01-08<br>进行中 :active, des2, 2014-01-09, 3d<br>计划一 : des3, after des2, 5d<br>计划二 : des4, after des3, 5d</p>
+
+<p>mermaid<br>gantt<br>dateFormat YYYY-MM-DD<br>title Adding GANTT diagram functionality to mermaid<br>section 现有任务<br>已完成 :done, des1, 2014-01-06,2014-01-08<br>进行中 :active, des2, 2014-01-09, 3d<br>计划一 : des3, after des2, 5d<br>计划二 : des4, after des3, 5d</p>
 <h3 id="测试甘特图"><a href="#测试甘特图" class="headerlink" title="测试甘特图"></a>测试甘特图</h3><pre class="mermaid">gantt
 dateFormat YYYY-MM-DD
 title Adding GANTT diagram functionality to mermaid
