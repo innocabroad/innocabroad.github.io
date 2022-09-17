@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>ios抓包tip | innoc abroad</title>
+  <title>python与神经网络 | innoc abroad</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -617,21 +617,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/002L7iXJgy1guzjnj7n6tj64mo2lrx6u02.jpg')">
+  background-position: center center;position: relative;background-image:url('https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/8601a18b87d6277f8394ed1327381f30e924fc13-c5e07d98.png')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        ios抓包tip
+        python与神经网络
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2022-09-16 |
+          <i class="fas fa-calendar"></i> 发表于：2022-09-17 |
         </span>
       
 
@@ -639,12 +639,16 @@
         <span class="post-detail-header_categories">
           <i class="iconfont iconbookmark1"></i> 分类：
           
-            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/" class="post-detail-header_category">
-              信息安全
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1%E6%96%B9%E6%B3%95/" class="post-detail-header_category">
+              数据建模方法
             </a>
           
-            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/%E6%8A%93%E5%8C%85/" class="post-detail-header_category">
-              抓包
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1%E6%96%B9%E6%B3%95/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="post-detail-header_category">
+              神经网络
+            </a>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1%E6%96%B9%E6%B3%95/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/python/" class="post-detail-header_category">
+              python
             </a>
           
         </span>
@@ -653,7 +657,7 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> 字数统计: 421 |
+            <i class="fas fa-file-text-o"></i> 字数统计: 5 |
           </span>
   
           <span class="min2read">
@@ -680,35 +684,26 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <p>app不走系统代理？如何抓包？</p>
-<blockquote>
-<p>之前遇到了一个问题iphone上的应用抓不到数据包。就是抓不到。<br>最初以为是像微信一样走了其他的协议。觉得这种应用他们也没有必要下这样的功夫这样的成本，肯定还是走的http<br>于是有了这个经历</p>
-</blockquote>
-<h1 id="简而言之，他们不走系统代理"><a href="#简而言之，他们不走系统代理" class="headerlink" title="简而言之，他们不走系统代理"></a>简而言之，他们不走系统代理</h1><p>网络请求代理设置NO_PROXY</p>
-<ul>
-<li>android系统设置的代理并不是强制对所有app生效的</li>
-<li>app可以在网络请求类库中通过自定义代理设置，选择是否要走系统代理</li>
-</ul>
-<h2 id="安卓怎么办呢"><a href="#安卓怎么办呢" class="headerlink" title="安卓怎么办呢"></a>安卓怎么办呢</h2><p>在网上找到了很多安卓的方法<br>不要用手机wifi的地方设置系统代理，那是系统代理不是全局代理<br>既然不走系统代理，那么直接抓系统的包不就可以了吗</p>
-<p>被抓包的APP并不知道自己被套在了第几层</p>
-<ul>
-<li>方案一</li>
-</ul>
-<p>使用proxifier 将模拟器请求直接转发到抓包软件，相当于抓安卓系统的包</p>
-<ul>
-<li>方案二</li>
-</ul>
-<p>同理，使用本地VPN抓包软件，如抓包精灵</p>
-<ul>
-<li>方案三</li>
-</ul>
-<p>justtrustme或者直接okhttp代理方法，使代理设置语句无效</p>
-<p>直接放弃。首先安卓root装证书越来越麻烦，烦，证书都装不上看什么https。其次，我的安卓机没有电呀。用ios挺好。</p>
-<h2 id="iOS怎么办呢"><a href="#iOS怎么办呢" class="headerlink" title="iOS怎么办呢"></a>iOS怎么办呢</h2><p>shadowrocket设置全局代理，好的解决。有个配置要叮嘱一下<br><img src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/IMG_81AA94E2F3D4-1.jpeg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/IMG_81AA94E2F3D4-1.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br>类型选择http。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>如果这也算提高攻击门槛的话，好吧可能确实有一点点点用处吧</p>
+        <h1 id="python-pip库"><a href="#python-pip库" class="headerlink" title="python pip库"></a>python pip库</h1><p>sklearn、torch、tensorflow</p>
 
       </div>
       <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1/" class="">
+              数据建模
+            </a>
+          
+            <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="">
+              神经网络
+            </a>
+          
+            <a href="/tags/python/" class="">
+              python
+            </a>
+          
+        </div>
         
       </div>
       
@@ -719,7 +714,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2022/09/16/ios-zhua-bao-tip/" target="_blank" title="ios抓包tip">http://innocabroad.github.io/2022/09/16/ios-zhua-bao-tip/</a>
+    <a href="/2022/09/17/python-yu-shen-jing-wang-luo/" target="_blank" title="python与神经网络">http://innocabroad.github.io/2022/09/17/python-yu-shen-jing-wang-luo/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -737,41 +732,21 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img" style="background-size: cover; 
-      background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/截屏2022-09-16%2019.20.42.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/截屏2022-09-16%2019.20.42.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-    </div>
-    <a href="/2022/09/16/echarts-hua-tu-jiao-cheng/" class="post-nav-link">
-      <div class="title">
-        <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">echarts画图教程</div>
-      </div>
-      
-      <!-- <div class="content">
-        spss pro 智能画图更方便https://www.spsspro.com/prodraw/operation/26
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/8601a18b87d6277f8394ed1327381f30e924fc13-c5e07d98.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/8601a18b87d6277f8394ed1327381f30e924fc13-c5e07d98.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2022/09/16/matlab-cao-zuo-shou-ce/" class="post-nav-link">
+    <a href="/2022/09/17/bp-shen-jing-wang-luo/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">matlab操作手册</div>
+        <div class="title-text">bp神经网络</div>
       </div>
       <!-- <div class="content">
-        
-Matlab中的读取使用操作
-load('/Users/innocence/Downloads/data.mat');
+        bp神经网络分类1、作用单层神经元学习能力非常有限，故而添加多个神经元，将神经元分为多层，它们不存在跨层连接，也没有同层
       </div> -->
     </a>
   </div>

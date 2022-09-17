@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>ios抓包tip | innoc abroad</title>
+  <title>bp神经网络 | innoc abroad</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -617,21 +617,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/002L7iXJgy1guzjnj7n6tj64mo2lrx6u02.jpg')">
+  background-position: center center;position: relative;background-image:url('https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/8601a18b87d6277f8394ed1327381f30e924fc13-c5e07d98.png')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        ios抓包tip
+        bp神经网络
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2022-09-16 |
+          <i class="fas fa-calendar"></i> 发表于：2022-09-17 |
         </span>
       
 
@@ -639,12 +639,12 @@
         <span class="post-detail-header_categories">
           <i class="iconfont iconbookmark1"></i> 分类：
           
-            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/" class="post-detail-header_category">
-              信息安全
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1%E6%96%B9%E6%B3%95/" class="post-detail-header_category">
+              数据建模方法
             </a>
           
-            <a href="/categories/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/%E6%8A%93%E5%8C%85/" class="post-detail-header_category">
-              抓包
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1%E6%96%B9%E6%B3%95/bp%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="post-detail-header_category">
+              bp神经网络
             </a>
           
         </span>
@@ -653,11 +653,11 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> 字数统计: 421 |
+            <i class="fas fa-file-text-o"></i> 字数统计: 707 |
           </span>
   
           <span class="min2read">
-            <i class="fas fa-clock"></i> 阅读时长: 1分钟 |
+            <i class="fas fa-clock"></i> 阅读时长: 2分钟 |
           </span>
   
           
@@ -680,35 +680,51 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <p>app不走系统代理？如何抓包？</p>
-<blockquote>
-<p>之前遇到了一个问题iphone上的应用抓不到数据包。就是抓不到。<br>最初以为是像微信一样走了其他的协议。觉得这种应用他们也没有必要下这样的功夫这样的成本，肯定还是走的http<br>于是有了这个经历</p>
-</blockquote>
-<h1 id="简而言之，他们不走系统代理"><a href="#简而言之，他们不走系统代理" class="headerlink" title="简而言之，他们不走系统代理"></a>简而言之，他们不走系统代理</h1><p>网络请求代理设置NO_PROXY</p>
-<ul>
-<li>android系统设置的代理并不是强制对所有app生效的</li>
-<li>app可以在网络请求类库中通过自定义代理设置，选择是否要走系统代理</li>
-</ul>
-<h2 id="安卓怎么办呢"><a href="#安卓怎么办呢" class="headerlink" title="安卓怎么办呢"></a>安卓怎么办呢</h2><p>在网上找到了很多安卓的方法<br>不要用手机wifi的地方设置系统代理，那是系统代理不是全局代理<br>既然不走系统代理，那么直接抓系统的包不就可以了吗</p>
-<p>被抓包的APP并不知道自己被套在了第几层</p>
-<ul>
-<li>方案一</li>
-</ul>
-<p>使用proxifier 将模拟器请求直接转发到抓包软件，相当于抓安卓系统的包</p>
-<ul>
-<li>方案二</li>
-</ul>
-<p>同理，使用本地VPN抓包软件，如抓包精灵</p>
-<ul>
-<li>方案三</li>
-</ul>
-<p>justtrustme或者直接okhttp代理方法，使代理设置语句无效</p>
-<p>直接放弃。首先安卓root装证书越来越麻烦，烦，证书都装不上看什么https。其次，我的安卓机没有电呀。用ios挺好。</p>
-<h2 id="iOS怎么办呢"><a href="#iOS怎么办呢" class="headerlink" title="iOS怎么办呢"></a>iOS怎么办呢</h2><p>shadowrocket设置全局代理，好的解决。有个配置要叮嘱一下<br><img src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/IMG_81AA94E2F3D4-1.jpeg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/IMG_81AA94E2F3D4-1.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br>类型选择http。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>如果这也算提高攻击门槛的话，好吧可能确实有一点点点用处吧</p>
+        <h1 id="bp神经网络分类"><a href="#bp神经网络分类" class="headerlink" title="bp神经网络分类"></a>bp神经网络分类</h1><h2 id="1、作用"><a href="#1、作用" class="headerlink" title="1、作用"></a>1、作用</h2><p>单层神经元学习能力非常有限，故而添加多个神经元，将神经元分为多层，它们不存在跨层连接，也没有同层连接，每层神经元和下一级神经元完全互连，这样的神经网络被称为“多层前馈网络”。其中，输入层神经元只负责输入，隐层神经元和输出层神经元都包含功能神经元，即包含激活函数。学习的过程即根据训练数据来调节神经元之间的“连接权”，以及功能神经元的阈值。<br>M-P 神经元模型<br>模拟神经元，通过函数将输入的向量转化为输出。<br><img src="https://b3logfile.com/file/2020/07/v27ccb6a3a5ec57607cf837fe0f9b98055720w-92c1c139.jpg?imageView2/2/interlace/1/format/jpg" class="lazyload placeholder" data-srcset="https://b3logfile.com/file/2020/07/v27ccb6a3a5ec57607cf837fe0f9b98055720w-92c1c139.jpg?imageView2/2/interlace/1/format/jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p>​bp神经网络是一种按误差逆传播算法训练的多层前馈网络，是目前应用最广泛的神经网络模型之一。bp神经网络的学习规则是使用最速下降法，通过反向传播来不断调整网络的权值和阈值，使网络的分类错误率最小。</p>
+<h2 id="2、输入输出描述"><a href="#2、输入输出描述" class="headerlink" title="2、输入输出描述"></a>2、输入输出描述</h2><p>输入：自变量X为1个或1个以上的定类或定量变量，因变量Y为一个定类变量。<br>输出：模型的分类结果和模型分类的评价效果。<br>​</p>
+<h2 id="3、案例示例"><a href="#3、案例示例" class="headerlink" title="3、案例示例"></a>3、案例示例</h2><p>根据红酒的颜色强度，脯氨酸，类黄酮等变量，生成一个能够区分琴酒，雪莉，贝尔摩德三种品种的红酒的bp神经网络。<br>导入数据</p>
+<h1 id="5、案例操作"><a href="#5、案例操作" class="headerlink" title="5、案例操作"></a>5、案例操作</h1><p>Step1：新建分析；<br>Step2：上传数据；<br>Step3：选择对应数据打开后进行预览，确认无误后点击开始分析；<br>step4：选择【bp神经网络分类】；<br>step5：查看对应的数据数据格式，按要求输入【bp神经网络分类】数据;<br>step6：进行参数设置（“更多设置”里的参数在客户端可进行设定）<br>step7：点击【开始分析】，完成全部操作。</p>
+<h1 id="6、输出结果分析"><a href="#6、输出结果分析" class="headerlink" title="6、输出结果分析"></a>6、输出结果分析</h1><p><img src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/bp%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB_%E7%A7%8D%E7%B1%BB_%E8%8B%AF%E9%85%9A_%E7%B1%BB%E9%BB%84%E9%85%AE.pdf" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/bp%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB_%E7%A7%8D%E7%B1%BB_%E8%8B%AF%E9%85%9A_%E7%B1%BB%E9%BB%84%E9%85%AE.pdf" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 
+
+	<div class="row">
+    <embed src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/bp神经网络分类_种类_苯酚_类黄酮.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 代码复制成功后，可直接在客户端NoteBook模块中粘贴代码并运行。 </span>
+注意：
+（<span class="token number">1</span>）以上代码对应的数据为案例数据，可自行修改数据来完成算法运算；
+（<span class="token number">2</span>）只支持spsspro客户端的notebook上调用；
+（<span class="token number">3</span>）首次安装客户端后，网络良好的情况下，spsspro算法SDK一般一两分钟内会下载完毕。
+<span class="token keyword">import</span> numpy
+<span class="token keyword">import</span> pandas
+<span class="token keyword">from</span> spsspro<span class="token punctuation">.</span>algorithm <span class="token keyword">import</span> supervised_learning
+<span class="token comment">#生成案例数据</span>
+data_x <span class="token operator">=</span> pandas<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+    <span class="token string">"A"</span><span class="token punctuation">:</span> numpy<span class="token punctuation">.</span>random<span class="token punctuation">.</span>random<span class="token punctuation">(</span>size<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">"B"</span><span class="token punctuation">:</span> numpy<span class="token punctuation">.</span>random<span class="token punctuation">.</span>random<span class="token punctuation">(</span>size<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+data_y <span class="token operator">=</span> pandas<span class="token punctuation">.</span>Series<span class="token punctuation">(</span>data<span class="token operator">=</span>numpy<span class="token punctuation">.</span>random<span class="token punctuation">.</span>choice<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> size<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">"C"</span><span class="token punctuation">)</span>
+<span class="token comment">#BP神经网络分类，输入参数详细可以光标放置函数括号内按shift+tab查看，输出结果参考spsspro模板分析报告</span>
+result <span class="token operator">=</span> supervised_learning<span class="token punctuation">.</span>mlp_classifier<span class="token punctuation">(</span>data_x<span class="token operator">=</span>data_x<span class="token punctuation">,</span> data_y<span class="token operator">=</span>data_y<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
       </div>
       <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1%E6%96%B9%E6%B3%95/" class="">
+              数据建模方法
+            </a>
+          
+            <a href="/tags/bp%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="">
+              bp神经网络
+            </a>
+          
+        </div>
         
       </div>
       
@@ -719,7 +735,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2022/09/16/ios-zhua-bao-tip/" target="_blank" title="ios抓包tip">http://innocabroad.github.io/2022/09/16/ios-zhua-bao-tip/</a>
+    <a href="/2022/09/17/bp-shen-jing-wang-luo/" target="_blank" title="bp神经网络">http://innocabroad.github.io/2022/09/17/bp-shen-jing-wang-luo/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -741,16 +757,17 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/截屏2022-09-16%2019.20.42.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/截屏2022-09-16%2019.20.42.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/8601a18b87d6277f8394ed1327381f30e924fc13-c5e07d98.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/8601a18b87d6277f8394ed1327381f30e924fc13-c5e07d98.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2022/09/16/echarts-hua-tu-jiao-cheng/" class="post-nav-link">
+    <a href="/2022/09/17/python-yu-shen-jing-wang-luo/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">echarts画图教程</div>
+        <div class="title-text">python与神经网络</div>
       </div>
       
       <!-- <div class="content">
-        spss pro 智能画图更方便https://www.spsspro.com/prodraw/operation/26
+        python pip库sklearn、torch、tensorflow
+
       </div> -->
     </a>
   </div>
@@ -761,17 +778,16 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2022/09/16/matlab-cao-zuo-shou-ce/" class="post-nav-link">
+    <a href="/2022/09/16/shu-ju-yu-chu-li-tip/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">matlab操作手册</div>
+        <div class="title-text">数据预处理tip</div>
       </div>
       <!-- <div class="content">
-        
-Matlab中的读取使用操作
-load('/Users/innocence/Downloads/data.mat');
+        优秀论文怎么写？？？
+数据分析&amp;预处理附件？给出了在多个地点采集得到的?组数据，每组文件包含了在同一地点采集到的
       </div> -->
     </a>
   </div>

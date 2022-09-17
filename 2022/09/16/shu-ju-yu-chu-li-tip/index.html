@@ -649,11 +649,11 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> 字数统计: 1.9k |
+            <i class="fas fa-file-text-o"></i> 字数统计: 2.2k |
           </span>
   
           <span class="min2read">
-            <i class="fas fa-clock"></i> 阅读时长: 6分钟 |
+            <i class="fas fa-clock"></i> 阅读时长: 8分钟 |
           </span>
   
           
@@ -729,6 +729,46 @@ sizes<span class="token operator">=</span><span class="token function">size</spa
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> os
+<span class="token keyword">import</span> re
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">from</span> os <span class="token keyword">import</span> listdir
+<span class="token keyword">from</span> collections <span class="token keyword">import</span> Counter
+<span class="token keyword">def</span> <span class="token function">missing_data_processing</span><span class="token punctuation">(</span>content<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">:</span>
+a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+time <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r'T:(\w+):RR'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>findall<span class="token punctuation">(</span>content<span class="token punctuation">)</span> b <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>Counter<span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> b<span class="token punctuation">:</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>Counter<span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span> a<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">109</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">return</span> a
+<span class="token keyword">def</span> <span class="token function">three_sigmal</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">:</span> n <span class="token operator">=</span> <span class="token number">3</span> <span class="token comment"># n*sigma</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+ymean <span class="token operator">=</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>data<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+ystd <span class="token operator">=</span> np<span class="token punctuation">.</span>std<span class="token punctuation">(</span>data<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment"># 标准差 threshold1 = ymean - n * ystd threshold2 = ymean + n * ystd</span>
+outlier <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment"># 将异常值保存</span>
+final <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment"># 删除掉异常值后的数据 for i in range(0, len(data)):</span>
+<span class="token comment">#print(np.abs(data[i]-ymean))</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>np<span class="token punctuation">.</span><span class="token builtin">abs</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">-</span>ymean<span class="token punctuation">)</span> <span class="token operator">></span> n <span class="token operator">*</span> ystd<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">any</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token comment">#</span>
+outlier<span class="token punctuation">.</span>append<span class="token punctuation">(</span>data<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span> final<span class="token punctuation">.</span>append<span class="token punctuation">(</span>data<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">return</span> outlier
+normal_data_path <span class="token operator">=</span> <span class="token string">'D:/竞赛/数学建模/2021 年 E 题/附件 1:UWB 数据集/正常数据'</span> abnormal_data_path <span class="token operator">=</span> <span class="token string">'D:/竞赛/数学建模/2021 年 E 题/附件 1:UWB 数据集/异常数 据'</span>
+label_path <span class="token operator">=</span> <span class="token string">'D:/竞赛/数学建模/2021 年 E 题/附件 1:UWB 数据集/Tag 坐标信息.txt'</span> filename1 <span class="token operator">=</span> listdir<span class="token punctuation">(</span>normal_data_path<span class="token punctuation">)</span>
+filename2 <span class="token operator">=</span> listdir<span class="token punctuation">(</span>abnormal_data_path<span class="token punctuation">)</span>
+<span class="token comment"># 均值</span>
+filename1<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span><span class="token builtin">int</span><span class="token punctuation">(</span>x<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> filename2<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span><span class="token builtin">int</span><span class="token punctuation">(</span>x<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># 整合标签数据</span>
+label <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>label_path<span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+line <span class="token operator">=</span> f<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 以行的形式进行读取文件 while line:</span>
+a <span class="token operator">=</span> line<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token comment"># 这是选取需要读取的位数 label.append(b) # 将其添加在列表之中 line = f.readline()</span>
+f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">## 整合正常、异常数据</span>
+normal_df <span class="token operator">=</span> extract_data<span class="token punctuation">(</span>normal_data_path<span class="token punctuation">,</span>filename1<span class="token punctuation">,</span>label<span class="token punctuation">)</span> abnormal_df <span class="token operator">=</span> extract_data<span class="token punctuation">(</span>abnormal_data_path<span class="token punctuation">,</span>filename2<span class="token punctuation">,</span>label<span class="token punctuation">)</span> <span class="token comment">## 删除重复数据</span>
+x1 <span class="token operator">=</span> normal_df<span class="token punctuation">.</span>drop_duplicates<span class="token punctuation">(</span><span class="token punctuation">)</span>
+x2 <span class="token operator">=</span> abnormal_df<span class="token punctuation">.</span>drop_duplicates<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">print</span><span class="token punctuation">(</span>abnormal_df<span class="token punctuation">[</span><span class="token string">'measure1'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>abnormal_df<span class="token punctuation">[</span><span class="token string">'filename'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token builtin">str</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">print</span><span class="token punctuation">(</span>x2<span class="token punctuation">[</span><span class="token string">'measure1'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>x2<span class="token punctuation">[</span><span class="token string">'filename'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token builtin">str</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
       </div>
       <div class="post-tags-categories">
         
@@ -767,6 +807,24 @@ sizes<span class="token operator">=</span><span class="token function">size</spa
 
 
 
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/8601a18b87d6277f8394ed1327381f30e924fc13-c5e07d98.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/8601a18b87d6277f8394ed1327381f30e924fc13-c5e07d98.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+    </div>
+    <a href="/2022/09/17/bp-shen-jing-wang-luo/" class="post-nav-link">
+      <div class="title">
+        <i class="fas fa-angle-left"></i> 上一篇:
+        <div class="title-text">bp神经网络</div>
+      </div>
+      
+      <!-- <div class="content">
+        bp神经网络分类1、作用单层神经元学习能力非常有限，故而添加多个神经元，将神经元分为多层，它们不存在跨层连接，也没有同层
+      </div> -->
+    </a>
+  </div>
+
 
 
   
@@ -781,7 +839,7 @@ sizes<span class="token operator">=</span><span class="token function">size</spa
         <div class="title-text">echarts画图教程</div>
       </div>
       <!-- <div class="content">
-        获取安装 echart &amp; jquery新建目录js存放js脚本在项目目录新建一个index.html 文件，内
+        spss pro 智能画图更方便https://www.spsspro.com/prodraw/operation/26
       </div> -->
     </a>
   </div>
