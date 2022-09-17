@@ -8,7 +8,7 @@
       <link href="/2022/09/17/python-yu-shen-jing-wang-luo/"/>
       <url>/2022/09/17/python-yu-shen-jing-wang-luo/</url>
       
-        <content type="html"><![CDATA[<h1 id="python-pip库"><a href="#python-pip库" class="headerlink" title="python pip库"></a>python pip库</h1><p>sklearn、torch、tensorflow</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="python-pip库-sklearn、torch、tensorflow"><a href="#python-pip库-sklearn、torch、tensorflow" class="headerlink" title="python pip库 sklearn、torch、tensorflow"></a>python pip库 sklearn、torch、tensorflow</h1><p>torch <a href="https://pytorch.org/docs/stable/torch.html">官方文档</a> <a href="https://pytorch.apachecn.org/#/">中文文档</a><br>python torch又称PyTorach，是一个以Python优先的深度学习框架，一个开源的Python机器学习库，用于自然语言处理等应用程序，不仅能够实现强大的GPU加速，同时还支持动态神经网络，这是现在很多主流框架比如Tensorflow等都不支持的。</p><p>sklearn <a href="https://www.sklearncn.cn/">中文文档</a><br>scikit-learn是基于Python语言的机器学习库，具有：</p><ul><li>简单高效的数据分析工具</li><li>可在多种环境中重复使用</li><li>建立在Numpy，Scipy以及matplotlib等数据科学库之上</li><li>开源且可商用的-基于BSD许可</li></ul><p>tensorflow <a href="https://www.tensorflow.org/">官方文档</a> <a href="https://www.w3cschool.cn/tensorflow_python/.html">中文文档</a><br>TensorFlow由谷歌人工智能团队谷歌大脑（Google Brain）开发和维护，拥有包括TensorFlow Hub、TensorFlow Lite、TensorFlow Research Cloud在内的多个项目以及各类应用程序接口（Application Programming Interface, API） [2]  。自2015年11月9日起，TensorFlow依据阿帕奇授权协议（Apache 2.0 open source license）开放源代码 [2]  。</p>]]></content>
       
       
       <categories>
