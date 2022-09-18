@@ -6,7 +6,7 @@
   <link href="http://innocabroad.github.io/atom.xml" rel="self"/>
   
   <link href="http://innocabroad.github.io/"/>
-  <updated>2022-09-18T05:22:18.490Z</updated>
+  <updated>2022-09-18T08:18:42.075Z</updated>
   <id>http://innocabroad.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mac环境安装imagemagick及使用imagemagick拼接图片</title>
+    <link href="http://innocabroad.github.io/2022/09/18/mac-huan-jing-an-zhuang-imagemagick-ji-shi-yong-imagemagick-pin-jie-tu-pian/"/>
+    <id>http://innocabroad.github.io/2022/09/18/mac-huan-jing-an-zhuang-imagemagick-ji-shi-yong-imagemagick-pin-jie-tu-pian/</id>
+    <published>2022-09-18T07:26:28.000Z</published>
+    <updated>2022-09-18T08:18:42.075Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">brew install ImageMagick<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol><li>安装：ImageMagick：</li></ol><p>命令：brew install ImageMagick</p><p>这种方式安装下来的imageMagic，不缺少东西，报错较少。安装之后的位置处于：</p><p>&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;imagemagick&#x2F;</p><ol start="2"><li>安装php扩展imagick</li></ol><p>下载：wget <a href="https://pecl.php.net/get/imagick-3.4.3.tgz">https://pecl.php.net/get/imagick-3.4.3.tgz</a></p><p>解压：sudo tar -zxvf imagick-3.4.3</p><p>安装：</p><p>cd imagick-3.4.3</p><p>sudo &#x2F;usr&#x2F;bin&#x2F;phpize</p><p>export PKG_CONFIG_PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;imagemagick&#x2F;7.0.8-12_1&#x2F;lib&#x2F;pkgconfig</p><p>作者：冷月葬花魂_<br>链接：<a href="https://www.jianshu.com/p/e8c47780bcb7">https://www.jianshu.com/p/e8c47780bcb7</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;brew </summary>
+      
+    
+    
+    
+    <category term="imagemagick" scheme="http://innocabroad.github.io/categories/imagemagick/"/>
+    
+    <category term="mac软件" scheme="http://innocabroad.github.io/categories/imagemagick/mac%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="图片处理" scheme="http://innocabroad.github.io/categories/imagemagick/mac%E8%BD%AF%E4%BB%B6/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="imagemagick" scheme="http://innocabroad.github.io/tags/imagemagick/"/>
+    
+    <category term="mac软件" scheme="http://innocabroad.github.io/tags/mac%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="图片处理" scheme="http://innocabroad.github.io/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>texlive更新安装宏包</title>
     <link href="http://innocabroad.github.io/2022/09/18/texlive-geng-xin-an-zhuang-hong-bao/"/>
     <id>http://innocabroad.github.io/2022/09/18/texlive-geng-xin-an-zhuang-hong-bao/</id>
     <published>2022-09-18T05:04:58.000Z</published>
-    <updated>2022-09-18T05:22:18.490Z</updated>
+    <updated>2022-09-18T05:40:27.807Z</updated>
     
     <content type="html"><![CDATA[<h2 id="修改-Tex-Live-镜像源"><a href="#修改-Tex-Live-镜像源" class="headerlink" title="修改 Tex Live 镜像源"></a>修改 Tex Live 镜像源</h2><blockquote><p>【参考】<a href="https://developer.aliyun.com/mirror/CTAN">https://developer.aliyun.com/mirror/CTAN</a><br>此处使用阿里云镜像站 CTAN 镜像源临时切换，可以用如下命令：</p></blockquote><h1 id="update-–all-参数可根据需要修改"><a href="#update-–all-参数可根据需要修改" class="headerlink" title="update –all 参数可根据需要修改"></a>update –all 参数可根据需要修改</h1><pre class="line-numbers language-none"><code class="language-none">tlmgr update --all --repository https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;CTAN&#x2F;systems&#x2F;texlive&#x2F;tlnet<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>长期更换，可以使用如下命令：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr option repository https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;CTAN&#x2F;systems&#x2F;texlive&#x2F;tlnet<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装宏包</p><pre class="line-numbers language-none"><code class="language-none">tlmgr install &lt;packagename&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>移除</p><pre class="line-numbers language-none"><code class="language-none">tlmgr remove &lt;packagename&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>查看所有更新的宏包指令：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>更新所有需要更新的宏包</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --self --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果遇到更新宏包过程中，某一个宏包更新失败，可以使用指令继续更新：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --reinstall-forcibly-removed --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这里的tlmgr就相当于Python中的pip，tlmgr是 Tex Live Package Manger</p><p>进阶选手可以选择上述更新清单中自己想更新的宏包进行更新。</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --usepackage_name<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
     
@@ -271,11 +303,11 @@
   </entry>
   
   <entry>
-    <title>数学建模思路</title>
-    <link href="http://innocabroad.github.io/2022/09/16/shu-xue-jian-mo-si-lu/"/>
-    <id>http://innocabroad.github.io/2022/09/16/shu-xue-jian-mo-si-lu/</id>
+    <title>数学建模模版思路</title>
+    <link href="http://innocabroad.github.io/2022/09/16/shu-xue-jian-mo-mo-ban-si-lu/"/>
+    <id>http://innocabroad.github.io/2022/09/16/shu-xue-jian-mo-mo-ban-si-lu/</id>
     <published>2022-09-16T02:35:58.000Z</published>
-    <updated>2022-09-17T16:39:56.525Z</updated>
+    <updated>2022-09-17T16:45:09.566Z</updated>
     
     <content type="html"><![CDATA[<h1 class="bamboo-h " id="问题拆解思路框架">问题拆解思路框架</h1><br/><h2 id="Matlab-origin基础"><a href="#Matlab-origin基础" class="headerlink" title="Matlab origin基础"></a>Matlab origin基础</h2><p>画图上手很快</p><p>关键词，用了什么算法，用了什么算法写什么算法。</p><p>知网上搜相关论文，用论文提取共同的点，在共同的点分析。</p><p>图很精美，但是要高级，图经过精心雕琢。学术，科研感。（总结，整理一篇matlab画图工具箱）</p><h2 id="解题思路框架"><a href="#解题思路框架" class="headerlink" title="解题思路框架"></a>解题思路框架</h2><ol><li>针对问题分析与拆解，得出解题思路框架</li><li>建模过程中风险因果思路分析<br>展示内容</li><li>公式字母的表达（格式统一）<br>word完成paper要看上去和谐。保证所有公式字母字体大小合适排版正确。<blockquote><p>word 公式排版tip</p></blockquote></li></ol><h1 class="bamboo-h " id="常用统计方法在建模过程中的运用">常用统计方法在建模过程中的运用</h1><br/><h2 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h2><ol><li><p>数据的预处理</p><p>遇到问题的数据不会很完美，对象是有缺点的，如果不直接去掉，就改造缺点</p><ul><li><p>不良数据</p><ul><li><p>有些以月为单位，有些以天为单位，有些以年为单位。粗暴直接删除（给个理由删除）</p></li><li><p>有洞就补，线性插值，拉格朗日插值，随机森林差值等。 很多方法去补充。有些数据不能补充，预测问题可以补充。</p><ul><li><input disabled="" type="checkbox"> 下篇博客整理</li></ul></li></ul></li><li><p>不平衡数据</p><ul><li><p>欠采样。发病人数一定是占总人数比较少的，交通事故的数量和整个一天的车流量是不平衡的。少的那一方是需要研究的对象，有的数据不平衡率就达到%95，这样的数据去做模型，但是实际是无效的数据。</p><ul><li>如何预处理？</li></ul></li><li><p>过采样。变量的个数大于样本量，对所有变量直接进行筛选。变量取值分布特别小（方差）特别小的时候，直接删除，没有替太多的信息量。通过什么方式去，保留有代表的数据。</p></li><li><p>SMOTE </p></li><li><p>简单的相关性分析，做一个<u>皮尔森相关性分析pearson</u>，<u>Sperman秩相关系数</u>,<u>余弦相似度计算</u></p></li></ul></li><li><p>确定建模对象（高维或大于样本量的）</p><ul><li><p>相关度分析</p><ul><li><input disabled="" type="checkbox"> 相关度分析博客</li></ul></li><li><p>关联度分析</p><ul><li>灰色</li></ul></li><li><p><a href="https://blog.csdn.net/loser_k/article/details/124454794">PCA降维</a></p></li><li><p>因子分析。把变量转化为因子。</p><ul><li>先分类再聚类，聚类之后再pca。通常建模的问题不会太简单，本身变量特别多的时候，一定是要对变量所处的类别去进行分类。如，关于人的变量归于一类，关于宏观的归于一类，有些来自外部环境归于一。300*300 的热力图 热力图是什么，怎么划。</li></ul></li></ul></li></ul><p>用好，把重要的变量保留下来。变量是有相关性的。只要方法是合理的叙述是清楚的结果明确的，都是对的。表述删除的原因，为什么删除，为什么用插补，为什么不用线性，给一个理由，为什么用相关性分析，为什么用pca。不需要原理，但是要说出来为什么要用。</p></li></ol><h2 id="离散模型"><a href="#离散模型" class="headerlink" title="离散模型"></a>离散模型</h2><ul><li>定性因变量（阳性-阴性，发病-不发病的变量）是<u>离散变量？</u>的定性变量<ul><li>0-1因变量<ul><li>logistic回归，SVM，DT可以作为切入点（<a href="https://www.baidu.com/link?url=-b7NhWvmw_zFNd9a1Qnh3UVJRmq93EiyFFAA7qs3PBQ_IJNJQ2BgH5vdn5lX9F-P2UNrpPzlQplGYH7yw-Skm-DcwoHIN1Q3sIB-brQwpQ7&wd=&eqid=9542541300008dba000000066323ec85">集成学习</a>）用的好不好看结果，看准确率。回潮矩阵的结果。</li></ul></li><li>多分类（0-1-2-3）因变量<ul><li>多分类logistic回归，（偏）比例优势模型 Priority-Model </li><li></li></ul></li></ul></li><li>离散型因变量<ul><li>发病的人数，死亡的人数，交通事故发生的个数，快递的量，双11快递的分布数量</li><li>poisson回归、负二项回归</li><li>hurdel model,tobit model 搜搜搜</li></ul></li></ul><h2 id="连续模型"><a href="#连续模型" class="headerlink" title="连续模型"></a>连续模型</h2><p>针对连续的模型。eg，发病时间长度，17天隔离，14天就可以。对</p><ul><li><p>线性回归 y &#x3D; ——</p><ul><li>变量的标准化（变量选择，降维），归一化，标准化，lasso</li><li>变量变换：ln，Box-cox变化，对变量进行组合，比值作为增速，变量是可解释的</li><li>PCA慎用变量组合（主成分就不是变量了，对模型的解读是吃力的，主成分的取值和变量的取值是两回事的，如果用了就要对主成分的原始变量进行解释）</li><li>样本聚类or变量聚类</li></ul></li><li><p>非线性回归 （可加模型，半参数模型，变系数模型）</p><ul><li>charge boost不如半参数回归模型</li></ul></li><li><p>关于模型结构（A影响B，B影响C，其实是A影响C）</p><ul><li><p>中介效应模型（A影响B，B影响C，其实是A影响C）</p></li><li><p>SEM（分层数据 不同省份作为区域，不同省份内的人的发病和治疗反应时间，分一个层级结构。进行分层）层分的越多，代码越复杂。在建模过程中加入到思考的过程中</p><ul><li><p>random effect model</p></li><li><p>random parameter model</p></li></ul></li></ul><p>在建模过程中加入到思考的过程中，不要用卷积网络cnn或者是gbdt梯度决策树<a href="https://blog.csdn.net/beiye_/article/details/123444653?spm=1001.2014.3001.5501">参考文献</a>。这是没有内容的文章，没有意义。<br>把所有的数据做一个分层，省份作为一个小组，每个省份都是一个模型，但是在数据的结构上进行了层次的划分，面板数据。</p><ul><li>时空相关<ul><li>car模型</li></ul></li></ul></li></ul><p>对数据结构要有一个深入的诊断。要分层处理数据。</p><h2 id="机器学习模型"><a href="#机器学习模型" class="headerlink" title="机器学习模型"></a>机器学习模型</h2><ul><li><p>包括但不限于神经网络、集成学习、深度学习（matlab神经网络，调包调参）</p><ol><li>模型训练和测试样本的比例，样本的划分要随机（要早论文中说我的样本随机）</li><li>调整参数的过程（要调整参数，写出参数）</li></ol><ul><li>列出最终的模型参数，以BP神经网络为例、权值、偏置、激活函数等参数，可依据这些参数再<br>现BP模型</li></ul><ol start="3"><li>训练和测试样本的相对误差结果展示</li></ol><ul><li>注意过拟合问题（两个数据都要展示，数据要真实）</li></ul></li></ul><h4 id="优化，综合评估"><a href="#优化，综合评估" class="headerlink" title="优化，综合评估"></a>优化，综合评估</h4><ul><li><p>包括但不限于遗传算法、粒子群算法、模拟退火算法等</p><ol><li><p>约束条件</p></li><li><p>调整参数的过程</p></li><li><p>基于实际意义的优化结果合理性</p></li></ol></li><li><p>评估指标构建</p><ol><li>单一赋权法，综合赋权法</li><li>评估指标的合理性解释</li></ol></li></ul><h1 class="bamboo-h " id="关于检验（why）">关于检验（why）</h1><br/><p>不论用什么分析方式，用什么模型。所有的结论，都要对合理性进行描述，为什么要这么描述，模型使用的合理性要论证。为什么用线性回归。不能说因为跑出来的mse数值很小p-value数值很小就可以。<br>任何一个模型，哪怕是线性模型也是有一定的假定和假设的。在假设中规避掉。<br>模型的合理性，数据敏感度分析<br>要去了解，如果我用了方差分析，数据需要有哪些要求，这个要求我的数据满足不满足，你要做验证。用了那就要验证。假定验证是不通过，那么怎么去弥补不足，怎么纠正改进，使得变得合情合理。<br>数学建模的目的是要投入生产的。是否可以实践，有合理性。<br>给一定的篇幅去对结果进行描述，我的模型的合理性，可以有落地性。我对模型有检验，我的模型可以被检验</p><h3 id="数据预处理的合理性描述（删除变量）"><a href="#数据预处理的合理性描述（删除变量）" class="headerlink" title="数据预处理的合理性描述（删除变量）"></a>数据预处理的合理性描述（删除变量）</h3><h3 id="模型使用合理性描述（模型使用的合理性要论证）"><a href="#模型使用合理性描述（模型使用的合理性要论证）" class="headerlink" title="模型使用合理性描述（模型使用的合理性要论证）"></a>模型使用合理性描述（模型使用的合理性要论证）</h3><h3 id="结果合理性论证"><a href="#结果合理性论证" class="headerlink" title="结果合理性论证"></a>结果合理性论证</h3>]]></content>
     
@@ -297,11 +329,11 @@
   </entry>
   
   <entry>
-    <title>数学建模模版思路</title>
-    <link href="http://innocabroad.github.io/2022/09/16/shu-xue-jian-mo-mo-ban-si-lu/"/>
-    <id>http://innocabroad.github.io/2022/09/16/shu-xue-jian-mo-mo-ban-si-lu/</id>
+    <title>数学建模思路</title>
+    <link href="http://innocabroad.github.io/2022/09/16/shu-xue-jian-mo-si-lu/"/>
+    <id>http://innocabroad.github.io/2022/09/16/shu-xue-jian-mo-si-lu/</id>
     <published>2022-09-16T02:35:58.000Z</published>
-    <updated>2022-09-17T16:45:09.566Z</updated>
+    <updated>2022-09-17T16:39:56.525Z</updated>
     
     <content type="html"><![CDATA[<h1 class="bamboo-h " id="问题拆解思路框架">问题拆解思路框架</h1><br/><h2 id="Matlab-origin基础"><a href="#Matlab-origin基础" class="headerlink" title="Matlab origin基础"></a>Matlab origin基础</h2><p>画图上手很快</p><p>关键词，用了什么算法，用了什么算法写什么算法。</p><p>知网上搜相关论文，用论文提取共同的点，在共同的点分析。</p><p>图很精美，但是要高级，图经过精心雕琢。学术，科研感。（总结，整理一篇matlab画图工具箱）</p><h2 id="解题思路框架"><a href="#解题思路框架" class="headerlink" title="解题思路框架"></a>解题思路框架</h2><ol><li>针对问题分析与拆解，得出解题思路框架</li><li>建模过程中风险因果思路分析<br>展示内容</li><li>公式字母的表达（格式统一）<br>word完成paper要看上去和谐。保证所有公式字母字体大小合适排版正确。<blockquote><p>word 公式排版tip</p></blockquote></li></ol><h1 class="bamboo-h " id="常用统计方法在建模过程中的运用">常用统计方法在建模过程中的运用</h1><br/><h2 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h2><ol><li><p>数据的预处理</p><p>遇到问题的数据不会很完美，对象是有缺点的，如果不直接去掉，就改造缺点</p><ul><li><p>不良数据</p><ul><li><p>有些以月为单位，有些以天为单位，有些以年为单位。粗暴直接删除（给个理由删除）</p></li><li><p>有洞就补，线性插值，拉格朗日插值，随机森林差值等。 很多方法去补充。有些数据不能补充，预测问题可以补充。</p><ul><li><input disabled="" type="checkbox"> 下篇博客整理</li></ul></li></ul></li><li><p>不平衡数据</p><ul><li><p>欠采样。发病人数一定是占总人数比较少的，交通事故的数量和整个一天的车流量是不平衡的。少的那一方是需要研究的对象，有的数据不平衡率就达到%95，这样的数据去做模型，但是实际是无效的数据。</p><ul><li>如何预处理？</li></ul></li><li><p>过采样。变量的个数大于样本量，对所有变量直接进行筛选。变量取值分布特别小（方差）特别小的时候，直接删除，没有替太多的信息量。通过什么方式去，保留有代表的数据。</p></li><li><p>SMOTE </p></li><li><p>简单的相关性分析，做一个<u>皮尔森相关性分析pearson</u>，<u>Sperman秩相关系数</u>,<u>余弦相似度计算</u></p></li></ul></li><li><p>确定建模对象（高维或大于样本量的）</p><ul><li><p>相关度分析</p><ul><li><input disabled="" type="checkbox"> 相关度分析博客</li></ul></li><li><p>关联度分析</p><ul><li>灰色</li></ul></li><li><p><a href="https://blog.csdn.net/loser_k/article/details/124454794">PCA降维</a></p></li><li><p>因子分析。把变量转化为因子。</p><ul><li>先分类再聚类，聚类之后再pca。通常建模的问题不会太简单，本身变量特别多的时候，一定是要对变量所处的类别去进行分类。如，关于人的变量归于一类，关于宏观的归于一类，有些来自外部环境归于一。300*300 的热力图 热力图是什么，怎么划。</li></ul></li></ul></li></ul><p>用好，把重要的变量保留下来。变量是有相关性的。只要方法是合理的叙述是清楚的结果明确的，都是对的。表述删除的原因，为什么删除，为什么用插补，为什么不用线性，给一个理由，为什么用相关性分析，为什么用pca。不需要原理，但是要说出来为什么要用。</p></li></ol><h2 id="离散模型"><a href="#离散模型" class="headerlink" title="离散模型"></a>离散模型</h2><ul><li>定性因变量（阳性-阴性，发病-不发病的变量）是<u>离散变量？</u>的定性变量<ul><li>0-1因变量<ul><li>logistic回归，SVM，DT可以作为切入点（<a href="https://www.baidu.com/link?url=-b7NhWvmw_zFNd9a1Qnh3UVJRmq93EiyFFAA7qs3PBQ_IJNJQ2BgH5vdn5lX9F-P2UNrpPzlQplGYH7yw-Skm-DcwoHIN1Q3sIB-brQwpQ7&wd=&eqid=9542541300008dba000000066323ec85">集成学习</a>）用的好不好看结果，看准确率。回潮矩阵的结果。</li></ul></li><li>多分类（0-1-2-3）因变量<ul><li>多分类logistic回归，（偏）比例优势模型 Priority-Model </li><li></li></ul></li></ul></li><li>离散型因变量<ul><li>发病的人数，死亡的人数，交通事故发生的个数，快递的量，双11快递的分布数量</li><li>poisson回归、负二项回归</li><li>hurdel model,tobit model 搜搜搜</li></ul></li></ul><h2 id="连续模型"><a href="#连续模型" class="headerlink" title="连续模型"></a>连续模型</h2><p>针对连续的模型。eg，发病时间长度，17天隔离，14天就可以。对</p><ul><li><p>线性回归 y &#x3D; ——</p><ul><li>变量的标准化（变量选择，降维），归一化，标准化，lasso</li><li>变量变换：ln，Box-cox变化，对变量进行组合，比值作为增速，变量是可解释的</li><li>PCA慎用变量组合（主成分就不是变量了，对模型的解读是吃力的，主成分的取值和变量的取值是两回事的，如果用了就要对主成分的原始变量进行解释）</li><li>样本聚类or变量聚类</li></ul></li><li><p>非线性回归 （可加模型，半参数模型，变系数模型）</p><ul><li>charge boost不如半参数回归模型</li></ul></li><li><p>关于模型结构（A影响B，B影响C，其实是A影响C）</p><ul><li><p>中介效应模型（A影响B，B影响C，其实是A影响C）</p></li><li><p>SEM（分层数据 不同省份作为区域，不同省份内的人的发病和治疗反应时间，分一个层级结构。进行分层）层分的越多，代码越复杂。在建模过程中加入到思考的过程中</p><ul><li><p>random effect model</p></li><li><p>random parameter model</p></li></ul></li></ul><p>在建模过程中加入到思考的过程中，不要用卷积网络cnn或者是gbdt梯度决策树<a href="https://blog.csdn.net/beiye_/article/details/123444653?spm=1001.2014.3001.5501">参考文献</a>。这是没有内容的文章，没有意义。<br>把所有的数据做一个分层，省份作为一个小组，每个省份都是一个模型，但是在数据的结构上进行了层次的划分，面板数据。</p><ul><li>时空相关<ul><li>car模型</li></ul></li></ul></li></ul><p>对数据结构要有一个深入的诊断。要分层处理数据。</p><h2 id="机器学习模型"><a href="#机器学习模型" class="headerlink" title="机器学习模型"></a>机器学习模型</h2><ul><li><p>包括但不限于神经网络、集成学习、深度学习（matlab神经网络，调包调参）</p><ol><li>模型训练和测试样本的比例，样本的划分要随机（要早论文中说我的样本随机）</li><li>调整参数的过程（要调整参数，写出参数）</li></ol><ul><li>列出最终的模型参数，以BP神经网络为例、权值、偏置、激活函数等参数，可依据这些参数再<br>现BP模型</li></ul><ol start="3"><li>训练和测试样本的相对误差结果展示</li></ol><ul><li>注意过拟合问题（两个数据都要展示，数据要真实）</li></ul></li></ul><h4 id="优化，综合评估"><a href="#优化，综合评估" class="headerlink" title="优化，综合评估"></a>优化，综合评估</h4><ul><li><p>包括但不限于遗传算法、粒子群算法、模拟退火算法等</p><ol><li><p>约束条件</p></li><li><p>调整参数的过程</p></li><li><p>基于实际意义的优化结果合理性</p></li></ol></li><li><p>评估指标构建</p><ol><li>单一赋权法，综合赋权法</li><li>评估指标的合理性解释</li></ol></li></ul><h1 class="bamboo-h " id="关于检验（why）">关于检验（why）</h1><br/><p>不论用什么分析方式，用什么模型。所有的结论，都要对合理性进行描述，为什么要这么描述，模型使用的合理性要论证。为什么用线性回归。不能说因为跑出来的mse数值很小p-value数值很小就可以。<br>任何一个模型，哪怕是线性模型也是有一定的假定和假设的。在假设中规避掉。<br>模型的合理性，数据敏感度分析<br>要去了解，如果我用了方差分析，数据需要有哪些要求，这个要求我的数据满足不满足，你要做验证。用了那就要验证。假定验证是不通过，那么怎么去弥补不足，怎么纠正改进，使得变得合情合理。<br>数学建模的目的是要投入生产的。是否可以实践，有合理性。<br>给一定的篇幅去对结果进行描述，我的模型的合理性，可以有落地性。我对模型有检验，我的模型可以被检验</p><h3 id="数据预处理的合理性描述（删除变量）"><a href="#数据预处理的合理性描述（删除变量）" class="headerlink" title="数据预处理的合理性描述（删除变量）"></a>数据预处理的合理性描述（删除变量）</h3><h3 id="模型使用合理性描述（模型使用的合理性要论证）"><a href="#模型使用合理性描述（模型使用的合理性要论证）" class="headerlink" title="模型使用合理性描述（模型使用的合理性要论证）"></a>模型使用合理性描述（模型使用的合理性要论证）</h3><h3 id="结果合理性论证"><a href="#结果合理性论证" class="headerlink" title="结果合理性论证"></a>结果合理性论证</h3>]]></content>
     
