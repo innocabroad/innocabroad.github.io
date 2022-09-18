@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: '假如给猪一对翅膀'
+title: innoc abroad
+subtitle: '假如给猪一对翅膀'
+description: '真的会忘记的，十年了，他会遇到更倒霉、更糟糕的事，然后发现，其实当时以为罪大恶极不可原谅的很多事，其实并不是真的很糟糕，然后他就忘了。'
 keywords:
 author: innocence
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://innocence.github.io
+url: http://innocabroad.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -101,10 +101,10 @@ theme: hexo-theme-bamboo
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-​deploy: 
+deploy: 
   type: git
-  repo: https://github.com/innocabroad/innocence.github.io.git
-  branch: main   
+  repo: git@github.com:innocabroad/innocence.github.io.git
+  branch: master
 search: 
   path: search.xml
   field: post
@@ -112,3 +112,15 @@ search:
 permalink_pinyin:
   enable: true
   separator: '-' # default: '-'
+  
+sequence:
+  webfont: https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js
+  raphael: https://cdn.bootcss.com/raphael/2.2.7/raphael.min.js
+  underscore: https://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js
+  sequence: https://cdn.bootcss.com/js-sequence-diagrams/1.0.6/sequence-diagram-min.js
+  css: # optional, the url for css, such as hand drawn theme 
+  options: 
+    theme: simple
+    css_class:
+
+

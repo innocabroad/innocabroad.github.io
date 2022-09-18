@@ -1,0 +1,24 @@
+# widget_library 里面的不会出现在sticky区域，也就是不会粘贴在左侧 
+widget_library:
+  - class_name: test_a
+    id_name: test_a
+    order: 0
+    name: 这个widget不会粘贴
+    icon: fab fa-weibo
+    icon_color: '#d63130'
+    url: http://baidu.com
+    background: '#fff'
+    html: 'haha'
+
+# widget_library_sticky 里面的会出现在sticky区域，会粘贴在左侧
+widget_library_sticky:
+  - class_name: testWidget
+    id_name: testWidget
+    order: -1
+    name: 微博热搜
+    icon: fab fa-weibo
+    icon_color: '#d63130'
+    url: http://baidu.com
+    background: '#fff'
+    html: 'xixi'
+
