@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>texlive更新安装宏包</title>
+      <link href="/2022/09/18/texlive-geng-xin-an-zhuang-hong-bao/"/>
+      <url>/2022/09/18/texlive-geng-xin-an-zhuang-hong-bao/</url>
+      
+        <content type="html"><![CDATA[<h2 id="修改-Tex-Live-镜像源"><a href="#修改-Tex-Live-镜像源" class="headerlink" title="修改 Tex Live 镜像源"></a>修改 Tex Live 镜像源</h2><blockquote><p>【参考】<a href="https://developer.aliyun.com/mirror/CTAN">https://developer.aliyun.com/mirror/CTAN</a><br>此处使用阿里云镜像站 CTAN 镜像源临时切换，可以用如下命令：</p></blockquote><h1 id="update-–all-参数可根据需要修改"><a href="#update-–all-参数可根据需要修改" class="headerlink" title="update –all 参数可根据需要修改"></a>update –all 参数可根据需要修改</h1><pre class="line-numbers language-none"><code class="language-none">tlmgr update --all --repository https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;CTAN&#x2F;systems&#x2F;texlive&#x2F;tlnet<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>长期更换，可以使用如下命令：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr option repository https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;CTAN&#x2F;systems&#x2F;texlive&#x2F;tlnet<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装宏包</p><pre class="line-numbers language-none"><code class="language-none">tlmgr install &lt;packagename&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>移除</p><pre class="line-numbers language-none"><code class="language-none">tlmgr remove &lt;packagename&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>查看所有更新的宏包指令：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>更新所有需要更新的宏包</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --self --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果遇到更新宏包过程中，某一个宏包更新失败，可以使用指令继续更新：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --reinstall-forcibly-removed --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这里的tlmgr就相当于Python中的pip，tlmgr是 Tex Live Package Manger</p><p>进阶选手可以选择上述更新清单中自己想更新的宏包进行更新。</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --usepackage_name<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> latex </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> latex </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>zotero安装的插件</title>
       <link href="/2022/09/17/zotero-an-zhuang-de-cha-jian/"/>
       <url>/2022/09/17/zotero-an-zhuang-de-cha-jian/</url>

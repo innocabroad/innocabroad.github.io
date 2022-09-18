@@ -6,7 +6,7 @@
   <link href="http://innocabroad.github.io/atom.xml" rel="self"/>
   
   <link href="http://innocabroad.github.io/"/>
-  <updated>2022-09-17T16:44:53.535Z</updated>
+  <updated>2022-09-18T05:22:18.490Z</updated>
   <id>http://innocabroad.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>texlive更新安装宏包</title>
+    <link href="http://innocabroad.github.io/2022/09/18/texlive-geng-xin-an-zhuang-hong-bao/"/>
+    <id>http://innocabroad.github.io/2022/09/18/texlive-geng-xin-an-zhuang-hong-bao/</id>
+    <published>2022-09-18T05:04:58.000Z</published>
+    <updated>2022-09-18T05:22:18.490Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="修改-Tex-Live-镜像源"><a href="#修改-Tex-Live-镜像源" class="headerlink" title="修改 Tex Live 镜像源"></a>修改 Tex Live 镜像源</h2><blockquote><p>【参考】<a href="https://developer.aliyun.com/mirror/CTAN">https://developer.aliyun.com/mirror/CTAN</a><br>此处使用阿里云镜像站 CTAN 镜像源临时切换，可以用如下命令：</p></blockquote><h1 id="update-–all-参数可根据需要修改"><a href="#update-–all-参数可根据需要修改" class="headerlink" title="update –all 参数可根据需要修改"></a>update –all 参数可根据需要修改</h1><pre class="line-numbers language-none"><code class="language-none">tlmgr update --all --repository https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;CTAN&#x2F;systems&#x2F;texlive&#x2F;tlnet<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>长期更换，可以使用如下命令：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr option repository https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;CTAN&#x2F;systems&#x2F;texlive&#x2F;tlnet<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装宏包</p><pre class="line-numbers language-none"><code class="language-none">tlmgr install &lt;packagename&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>移除</p><pre class="line-numbers language-none"><code class="language-none">tlmgr remove &lt;packagename&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>查看所有更新的宏包指令：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>更新所有需要更新的宏包</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --self --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果遇到更新宏包过程中，某一个宏包更新失败，可以使用指令继续更新：</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --reinstall-forcibly-removed --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这里的tlmgr就相当于Python中的pip，tlmgr是 Tex Live Package Manger</p><p>进阶选手可以选择上述更新清单中自己想更新的宏包进行更新。</p><pre class="line-numbers language-none"><code class="language-none">tlmgr update --usepackage_name<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;修改-Tex-Live-镜像源&quot;&gt;&lt;a href=&quot;#修改-Tex-Live-镜像源&quot; class=&quot;headerlink&quot; title=&quot;修改 Tex Live 镜像源&quot;&gt;&lt;/a&gt;修改 Tex Live 镜像源&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;【参考】&lt;</summary>
+      
+    
+    
+    
+    <category term="latex" scheme="http://innocabroad.github.io/categories/latex/"/>
+    
+    
+    <category term="latex" scheme="http://innocabroad.github.io/tags/latex/"/>
+    
+  </entry>
   
   <entry>
     <title>zotero安装的插件</title>
