@@ -34,7 +34,4 @@ sudo /usr/bin/phpize
 
 export PKG_CONFIG_PATH=/usr/local/Cellar/imagemagick/7.0.8-12_1/lib/pkgconfig
 
-作者：冷月葬花魂_
-链接：https://www.jianshu.com/p/e8c47780bcb7
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
