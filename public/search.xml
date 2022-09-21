@@ -4,39 +4,6 @@
   
     
     <entry>
-      <title>Mac环境安装imagemagick及使用imagemagick拼接图片</title>
-      <link href="/2022/09/18/mac-huan-jing-an-zhuang-imagemagick-ji-shi-yong-imagemagick-pin-jie-tu-pian/"/>
-      <url>/2022/09/18/mac-huan-jing-an-zhuang-imagemagick-ji-shi-yong-imagemagick-pin-jie-tu-pian/</url>
-      
-        <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">brew install ImageMagick<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol><li>安装：ImageMagick：</li></ol><p>命令：brew install ImageMagick</p><p>这种方式安装下来的imageMagic，不缺少东西，报错较少。安装之后的位置处于：</p><p>&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;imagemagick&#x2F;</p><ol start="2"><li>安装php扩展imagick</li></ol><p>下载：wget <a href="https://pecl.php.net/get/imagick-3.4.3.tgz">https://pecl.php.net/get/imagick-3.4.3.tgz</a></p><p>解压：sudo tar -zxvf imagick-3.4.3</p><p>安装：</p><p>cd imagick-3.4.3</p><p>sudo &#x2F;usr&#x2F;bin&#x2F;phpize</p><p>export PKG_CONFIG_PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;imagemagick&#x2F;7.0.8-12_1&#x2F;lib&#x2F;pkgconfig</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> imagemagick </category>
-          
-          <category> mac软件 </category>
-          
-          <category> 图片处理 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> imagemagick </tag>
-            
-            <tag> mac软件 </tag>
-            
-            <tag> 图片处理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>texlive更新安装宏包</title>
       <link href="/2022/09/18/texlive-geng-xin-an-zhuang-hong-bao/"/>
       <url>/2022/09/18/texlive-geng-xin-an-zhuang-hong-bao/</url>

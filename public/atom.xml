@@ -6,7 +6,7 @@
   <link href="http://innocabroad.github.io/atom.xml" rel="self"/>
   
   <link href="http://innocabroad.github.io/"/>
-  <updated>2022-09-18T08:23:30.349Z</updated>
+  <updated>2022-09-18T05:40:27.807Z</updated>
   <id>http://innocabroad.github.io/</id>
   
   <author>
@@ -15,38 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Mac环境安装imagemagick及使用imagemagick拼接图片</title>
-    <link href="http://innocabroad.github.io/2022/09/18/mac-huan-jing-an-zhuang-imagemagick-ji-shi-yong-imagemagick-pin-jie-tu-pian/"/>
-    <id>http://innocabroad.github.io/2022/09/18/mac-huan-jing-an-zhuang-imagemagick-ji-shi-yong-imagemagick-pin-jie-tu-pian/</id>
-    <published>2022-09-18T07:26:28.000Z</published>
-    <updated>2022-09-18T08:23:30.349Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">brew install ImageMagick<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol><li>安装：ImageMagick：</li></ol><p>命令：brew install ImageMagick</p><p>这种方式安装下来的imageMagic，不缺少东西，报错较少。安装之后的位置处于：</p><p>&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;imagemagick&#x2F;</p><ol start="2"><li>安装php扩展imagick</li></ol><p>下载：wget <a href="https://pecl.php.net/get/imagick-3.4.3.tgz">https://pecl.php.net/get/imagick-3.4.3.tgz</a></p><p>解压：sudo tar -zxvf imagick-3.4.3</p><p>安装：</p><p>cd imagick-3.4.3</p><p>sudo &#x2F;usr&#x2F;bin&#x2F;phpize</p><p>export PKG_CONFIG_PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;imagemagick&#x2F;7.0.8-12_1&#x2F;lib&#x2F;pkgconfig</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;brew </summary>
-      
-    
-    
-    
-    <category term="imagemagick" scheme="http://innocabroad.github.io/categories/imagemagick/"/>
-    
-    <category term="mac软件" scheme="http://innocabroad.github.io/categories/imagemagick/mac%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="图片处理" scheme="http://innocabroad.github.io/categories/imagemagick/mac%E8%BD%AF%E4%BB%B6/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/"/>
-    
-    
-    <category term="imagemagick" scheme="http://innocabroad.github.io/tags/imagemagick/"/>
-    
-    <category term="mac软件" scheme="http://innocabroad.github.io/tags/mac%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="图片处理" scheme="http://innocabroad.github.io/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
   
   <entry>
     <title>texlive更新安装宏包</title>
