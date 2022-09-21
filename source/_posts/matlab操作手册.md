@@ -4,9 +4,6 @@ date: 2022-09-16 13:40:42
 tags: [数据建模,matlab,操作手册]
 categories: [数据建模,matlab,操作手册]
 swiper: true # 将文章放入轮播图中
-swiperImg: '' # 该文章在轮播图中的图片，可以是本地目录下图片也可以是http://xxx图片
-img: '' # 该文章图片，可以是本地目录下图片也可以是http://xxx图片
-top: 
 ---
 - Matlab中的读取使用操作
 ```matlab

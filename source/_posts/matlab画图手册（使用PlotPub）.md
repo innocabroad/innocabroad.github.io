@@ -4,9 +4,6 @@ date: 2022-09-16 13:14:16
 tags: [数据建模,matlab,画图]
 categories: [数据建模,matlab,画图]
 swiper: true # 将文章放入轮播图中
-swiperImg: '' # 该文章在轮播图中的图片，可以是本地目录下图片也可以是http://xxx图片
-img: '' # 该文章图片，可以是本地目录下图片也可以是http://xxx图片
-top: 
 ---
 
 # PlotPub安装
