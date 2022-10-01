@@ -649,11 +649,11 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> 字数统计: 2.2k |
+            <i class="fas fa-file-text-o"></i> 字数统计: 3k |
           </span>
   
           <span class="min2read">
-            <i class="fas fa-clock"></i> 阅读时长: 8分钟 |
+            <i class="fas fa-clock"></i> 阅读时长: 11分钟 |
           </span>
   
           
@@ -770,6 +770,15 @@ x1 <span class="token operator">=</span> normal_df<span class="token punctuation
 x2 <span class="token operator">=</span> abnormal_df<span class="token punctuation">.</span>drop_duplicates<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">print</span><span class="token punctuation">(</span>abnormal_df<span class="token punctuation">[</span><span class="token string">'measure1'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>abnormal_df<span class="token punctuation">[</span><span class="token string">'filename'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token builtin">str</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">print</span><span class="token punctuation">(</span>x2<span class="token punctuation">[</span><span class="token string">'measure1'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>x2<span class="token punctuation">[</span><span class="token string">'filename'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token builtin">str</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
+<h1 id="文章记录"><a href="#文章记录" class="headerlink" title="文章记录"></a>文章记录</h1><ol>
+<li><p>首先对未定量的变量数据进行量化，然后对数据进行 清洗处理，使数据标准化、无量纲并做归一化处理;其次，对数据做 KMO 和 Bartlett 检验，判断是否适合进行因子分析<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43042683/article/details/123931201">https://blog.csdn.net/weixin_43042683/article/details/123931201</a></p>
+</li>
+<li><p>模型的构建需要符合实际情况且误差控制在一定范围内的、相对准确的相 关距离测量数据作为支撑。但是在实际的实验环境中，在进行数据测量、数据记录、数据 导出等过程中难免会存在一定问题, 使得最终得到的数据 (原始数据) 与希望得到的良好数 据存在一定差距。包括连续或间断性的数值缺失、数值漂移 (偏大或偏小) 等情况。因此, 对不良数据进行科学有效地预处理，对于 UWB 定位模型模型的构建有着决定性意义。</p>
+</li>
+</ol>
+<p>任务一要求对无干扰状态和有干扰状态下采集到的数据进行预处理，目前已知共有 324 个靶点坐标，每个靶点在同一位置上都采集多组数据，以特定的数据格式进行存储。 为了便于后续的处理，我们在数据预处理阶段，首先根据有无干扰因素对数据文件进行分类整合，将其转变成二维矩阵的形式进行存储;然后我们对每个靶点对应的二维数据矩阵<br>进行异常值的检测，其中异常值主要包括主要包括对缺失值、重复值、及离群值三类;最<br>后将异常数据剔除并保存。这样就完成了任务一要求的数据预处理工作。</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/%E6%88%AA%E5%B1%8F2022-10-0117.06.05.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/%E6%88%AA%E5%B1%8F2022-10-0117.06.05.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br> <img src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/E21100030005.pdf" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/E21100030005.pdf" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"><br> 3. 在工程实践中，我们得到的数据会存在有缺失值、异常值等，在使用之前需要进行数<br>据预处理。本文在所给附件的基础上做出以下处理:<br>首先对采集的数据进行空缺值判断，经过筛选排查没有空缺值;然后，采用拉依达准 则对数据进行筛选，剔除特征值不在   3 范围内且异常值个数大于 100 的特征，共剔除<br>了 26 个特征，在此基础上对特征值不在   3 范围内且异常值个数不大于 100 的特征进 行最值限幅法处理。限幅的具体方法为:用   3 来代替大于  + 3 的异常值，用   3<br>来代替小于   3 的异常值，做到对附件中的异常数据的限幅;最后对数据进行排查筛选，<br>剔除特征中 0 值比例大于 90%的数据，剔除 344 个特征，剩余 359 个特征，数据预处理完 毕。<br>下图所示 3-2 为数据预处理流程图:</p>
+<p>本文选取了首先剔除 26 个特征中的 6 个做出其箱线图加以说明解释，如图 3-3 所示为 异常数据的箱线图，其数据分布过于分散，箱子被压得很扁，甚至只剩下一条线，同时还 存在很多异常值，故对此类特征进行剔除。</p>
 
       </div>
       <div class="post-tags-categories">

@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>遗传算法求解问题 | innoc abroad</title>
+  <title>算法-问题求解 | innoc abroad</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -624,7 +624,7 @@
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        遗传算法求解问题
+        算法-问题求解
       </span>
     </div>
     
@@ -653,11 +653,11 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> 字数统计: 3.2k |
+            <i class="fas fa-file-text-o"></i> 字数统计: 6.2k |
           </span>
   
           <span class="min2read">
-            <i class="fas fa-clock"></i> 阅读时长: 11分钟 |
+            <i class="fas fa-clock"></i> 阅读时长: 22分钟 |
           </span>
   
           
@@ -680,7 +680,7 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h1 class="bamboo-h " id="遗传算法求解典型优化问题">遗传算法求解典型优化问题</h1><br/>
+        <h1 class="bamboo-h " id="算法-问题求解">算法-问题求解</h1><br/>
 
 <p>什么是参数优化？举个例子，对于模型y&#x3D;f(x)&#x3D;ax+b，附件中会给定x和y的值。当然，模型y&#x3D;ax+b不会告诉你，这是自己建立的模型。建立了模型之后，通过数据去拟合，求解参数a和b</p>
 <p>怎么求a和b，这就是关于算法的问题。对于y&#x3D;ax+b这样简单的模型，拟合本质上是优化，我们可以使用各种成熟的优化算法，如：<br>单步长（变步长）搜索法<br>二分搜索法<br>黄金分割搜索法<br>最小二乘法<br>遗传粒子群模拟退火算法</p>
@@ -719,7 +719,7 @@
 <p>给定一组多个（n）物品，每种物品都有自己的重量（wi）和价值（vi），在限定的总重量&#x2F;总容量（C）内，选择其中若干个（也即每种物品可以选0个或1个），设计选择方案使得物品的总价值最高。<br>给定正整数</p>
 <h2 class="bamboo-h " id="评价模型-主成分分析">评价模型-主成分分析</h2><br/>
 <p>分析主要原因</p>
-<p>（PCA）PCA是一种降维方法，常用于对高维数据集作降维，它会将一个大的变量集合转化为更少的变量集合，同时保留大的变量集合中的大部分信息。</p>
+<p>（PCA）PCA是一种降维方法，常用于对高维数据集作降维，它会将一个大的变量集合转化为更少的变量集合，同时保留大的变量集合中的大部分信息。“主成分分析在机器学习内被归类成为降维（Dimension reduction）内特征擷取（Feature extraction）的一种方法，降维就是希望数据的维度数减少，但整体的效能不会差异太多甚至会更好”→其实说法还是很文。</p>
 <ol>
 <li><p>计算标准差<br> 具体一点说就是因为我们后续的结果对数据的方差十分敏感，取值范围较大的维度会比相对较小的维度造成更大的影响（例如一个在1-100之间变化的维度对结果的影响，比一个0-1的更大），会导致一个偏差较大的结果，所以，将数据转化到相似的范围可以预防这个问题。</p>
 </li>
@@ -795,18 +795,70 @@ pca_new <span class="token operator">=</span> pca<span class="token punctuation"
 <span class="token keyword">print</span><span class="token punctuation">(</span>pca<span class="token punctuation">.</span>get_precision<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-<p>　　　　除了这些输入参数外，有两个PCA类的成员值得关注。第一个是explained_variance_，它代表降维后的各主成分的方差值。方差值越大，则说明越是重要的主成分。第二个是explained_variance_ratio_，它代表降维后的各主成分的方差值占总方差值的比例，这个比例越大，则越是重要的主成分。<br>7. 提取几个主成分最合适<br> 从累计贡献率曲线可以看出提取两个主成分的累计贡献率达到0.9777，提取四个主成分的累计贡献率为0.9948，增加两个主成分累计贡献率只增加0.0171，但同时却增加了模型复杂度，加大计算量，增加运行时间，所以提取二个主成分最为合适。前4个标准化指标的累计贡献率已达到95.35%，估只需考虑前四个主要指标即可</p>
+<p>除了这些输入参数外，有两个PCA类的成员值得关注。第一个是explained_variance_，它代表降维后的各主成分的方差值。方差值越大，则说明越是重要的主成分。第二个是explained_variance_ratio_，它代表降维后的各主成分的方差值占总方差值的比例，这个比例越大，则越是重要的主成分。<br>7. 提取几个主成分最合适<br>    从累计贡献率曲线可以看出提取两个主成分的累计贡献率达到0.9777，提取四个主成分的累计贡献率为0.9948，增加两个主成分累计贡献率只增加0.0171，但同时却增加了模型复杂度，加大计算量，增加运行时间，所以提取二个主成分最为合适。前4个标准化指标的累计贡献率已达到95.35%，估只需考虑前四个主要指标即可</p>
 <ol start="8">
-<li>参考文章<br><a target="_blank" rel="noopener" href="https://www.freesion.com/article/520762211/">https://www.freesion.com/article/520762211/</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/170594013">https://zhuanlan.zhihu.com/p/170594013</a><br><a target="_blank" rel="noopener" href="https://www.aisoutu.com/a/1510739">https://www.aisoutu.com/a/1510739</a></li>
+<li>参考文章<br><a target="_blank" rel="noopener" href="https://www.freesion.com/article/520762211/">https://www.freesion.com/article/520762211/</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/170594013">https://zhuanlan.zhihu.com/p/170594013</a><br><a target="_blank" rel="noopener" href="https://www.aisoutu.com/a/1510739">https://www.aisoutu.com/a/1510739</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hadoop2015/p/7419087.html">https://www.cnblogs.com/hadoop2015/p/7419087.html</a><br>spss主成分分析<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/376799094">https://zhuanlan.zhihu.com/p/376799094</a><br>风控模型—WOE与IV指标的深入理解应用（数据权重处理-热力图）<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/80134853">https://zhuanlan.zhihu.com/p/80134853</a><br>数据预处理 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/415705923">https://zhuanlan.zhihu.com/p/415705923</a><br><a target="_blank" rel="noopener" href="https://www.heywhale.com/mw/project/5d259740688d36002c57b454">https://www.heywhale.com/mw/project/5d259740688d36002c57b454</a><!-- tab 优点 --></li>
 </ol>
-<p>————————————————<br>版权声明：本文为CSDN博主「weixin_39628268」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39628268/article/details/112514196">https://blog.csdn.net/weixin_39628268/article/details/112514196</a></p>
-<div class="tabs" id="tab-id"><ul class="nav-tabs"><li class="tab active"><a class="#tab-id-1">优点</a></li><li class="tab"><a class="#tab-id-2">缺点</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-id-1"><p>在建立模型的过程中，分析问题较为全面，综合考虑影响粮食种植面积的直接因素和间接因素，将农业劳动人口、进口量、出口量、农民教育程度、城乡收入差距、家庭负担（消费收入）、农资指数、农机总动力、上年粮食最低收购价、工业生产总值和城市区域面积均纳入影响粮食种植面积的指标体系；运用了多元线性回归模型提高了影响粮食种植面积的数学模型合理性的可信度。<br>在运用多元线性回归模型之前首先用主成分分析法选出较少的新因素代替原来的较多影响因素，简化了后面多元线性回归分析的数据量，并且提高了准确性。</p></div><div class="tab-pane" id="tab-id-2"><p>模型中需要考虑的影响主要成分的指标体系较多，只考虑了一部分指标体系，使模型在实际使用中缺乏一定的可信度。<br>选用指标也不全面，使得评价模型结果未能真实反映政策执行效果，结果偏离实际情况较大。</p></div></div></div>
+<p>在建立模型的过程中，分析问题较为全面，综合考虑影响粮食种植面积的直接因素和间接因素，将农业劳动人口、进口量、出口量、农民教育程度、城乡收入差距、家庭负担（消费收入）、农资指数、农机总动力、上年粮食最低收购价、工业生产总值和城市区域面积均纳入影响粮食种植面积的指标体系；运用了多元线性回归模型提高了影响粮食种植面积的数学模型合理性的可信度。<br>在运用多元线性回归模型之前首先用主成分分析法选出较少的新因素代替原来的较多影响因素，简化了后面多元线性回归分析的数据量，并且提高了准确性。</p>
+<!-- endtab -->
+
+<!-- tab 缺点 -->
+
+<p>模型中需要考虑的影响主要成分的指标体系较多，只考虑了一部分指标体系，使模型在实际使用中缺乏一定的可信度。<br>选用指标也不全面，使得评价模型结果未能真实反映政策执行效果，结果偏离实际情况较大。</p>
+<!-- endtab -->
+
+
 
 <h2 class="bamboo-h " id="评价模型-机器学习（回归问题）-多元线性回归">评价模型-机器学习（回归问题）-多元线性回归</h2><br/>
 
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43923588/article/details/107672879">https://blog.csdn.net/qq_43923588/article/details/107672879</a></p>
+<ol>
+<li>一元线性回归是一个主要影响因素作为自变量来解释因变量的变化，但在现实问题中，因变量的变化往往受到多个重要因素的影响，这时就需要两个或两个以上的影响因素作为自变量来解释因变量的变化，这便是多元回归，而当多个自变量与因变量之间是线性关系时，所进行的回归分析就是多元线性回归。多元线性回归的一般形式为：</li>
+</ol>
+
+
+<p>同一元线性回归一样，我们要在误差平方和最小的情况下，使用最小二乘法求解参数，下面我们通过一个预测房屋租赁价格的实例来透彻理解多元线性回归模型。<br>2. 数据展示<br>在此例中房屋租赁价格为因变量，房屋面积和房屋数量为自变量，由4.1可知，此处我们要建立一个二元线性回归模型，首先构建训练数据集，并对其进行可视化。</p>
+<p>见代码<br>3. 参考资料<br><a target="_blank" rel="noopener" href="https://www.heywhale.com/mw/project/5f44c8c2835fe7002d990503">https://www.heywhale.com/mw/project/5f44c8c2835fe7002d990503</a></p>
+<h2 class="bamboo-h " id="随机森林-可以降维度，预测数值">随机森林-可以降维度，预测数值</h2><br/>
+
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43923588/article/details/107672879">https://blog.csdn.net/qq_43923588/article/details/107672879</a></p>
+<p>装袋法中的装袋二字是精髓，顾名思义即将多个模型装入同一个袋子后，让这个袋子作为一个新的模型来实现预测需求，仅此而已。换句话说，即把多个模型组合起来形成一个新的大模型，这个大模型最终给出的预测结果是由这多个小模型综合决定的，决定方式为少数服从多数。</p>
+
+
+<ol>
+<li>同一元线性回归一样，我们要在误差平方和最小的情况下，使用最小二乘法求解参数，下面我们通过一个预测房屋租赁价格的实例来透彻理解多元线性回归模型。</li>
+</ol>
+<p>假设有10万条原始数据，用这些数据来做十棵决策树（当然也可以是其他模型），最后这10棵树将被装进了同一个袋子中。这时候取其中一条数据放入这个袋子，便会得出10个预测值(每棵树各一个)，假如其中三棵树给出的预测值为0，剩余的七棵给出的为1，那我们便可知道这个袋子对这个数据的预测结果为 0 的概率是 3&#x2F;10。</p>
+<ul>
+<li><p>问：袋子中的每个模型使用的样本量范围应为多少合适？</p>
+</li>
+<li><p>答：如果是上面的例子，袋子里面有十棵树，源数据总量为 10万 条，则每棵树取用的样本量的最小值为最少是1w个(10w&#x2F;10棵 &#x3D; 1w&#x2F;棵)，因为至少要保证不能浪费样本，但每棵树最多可取用多少样本呢？其实在样本量已知，同一袋子中模型个数为n的情况下，样本的选择比例为1&#x2F;n ~ 0.8最好。每个小模型取用 100% 的样本是绝对没有意义的，那就跟没抽是一样的，这样也就没有体现出装袋，只有每个模型用到的数据都有一定的不同，组合起来后每个的投票（预测结果）也才有意义。</p>
+</li>
+<li><p>问：袋中模型们之间的相关性会影响最后的决策结果吗？</p>
+</li>
+<li><p>答：装袋法思路最重要的一点：袋子中每个模型之间不能相关，越不相关越好，这里的不相关主要体现在用于训练每个模型的样本不一样。其次，每个模型的精度越高越好，这样它的投票才更有价值。</p>
+</li>
+<li><p>PS：训练模型的样本不一样这一点可以理解为总统选举，抽 10 波选民来投票，这 10 波选民的差异性越大越好，这样一来，只有在选民千差万别的情况下你依然脱颖而出，才足以说明你的实力，如果这10波选民中每一波之间的差异性都很小，比如都是本来就偏袒于总统候选人，那投票结果的说服力就会大减。</p>
+</li>
+<li><p>问：上面所说的模型精度高是不是哪怕模型很复杂也可以，如果每个模型的精度高但都过度拟合怎么办？</p>
+</li>
+<li><p>答：在装袋法中，模型是越精确越好，哪怕是过度拟合的也没有关系。因为一个模型要想在训练集上做到越精确越好，而精确程度与模型的复杂度大多是成正比的，所以出现过拟合的情况也是正常且情有可原的。复杂和过度拟合只是对袋子中每个模型而言，因为最后都会被加权，所以整个袋子（整体）并不会出现过度拟合的情况。</p>
+</li>
+</ul>
+
+
+<p>最后总结一下：随机森林是集成学习中非常经典的一种方法，基础原理简单，实现优雅，可即学即用。而且随机森林应用十分广泛，并不只是局限于常见的金融领域，只要数据不平衡或者随机缺失严重，都值得尝试。</p>
+<ol start="2">
+<li>参考：<br><a target="_blank" rel="noopener" href="https://www.heywhale.com/mw/notebook/6337f71bdfae02496728f555">https://www.heywhale.com/mw/notebook/6337f71bdfae02496728f555</a></li>
+</ol>
+<p>随机森林可以降维度<br>还要用Pearson 相关分析逐一剔除相关性较强的 10 组变量，最后取前 20 个特征作为主要变量。<br><img src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/%E6%88%AA%E5%B1%8F2022-10-0117.11.37.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/%E6%88%AA%E5%B1%8F2022-10-0117.11.37.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p>3.3 数据降维 参考文献</p>
+<p>3.3.1 皮尔逊相关分析<br>皮尔逊相关也称为积差相关(或积矩相关)是英国统计学家皮尔逊于 20 世纪提出的 一种计算直线相关的方法。<br>假设有两个变量 X、Y，皮尔逊相关系数则用于度量 X 和 Y 之间的线性相关程度，其 值介于-1 与 1 之间。这种线性相关直观表述为:随着 X 增大，Y 是否同时增大或者减小; 当二者分布在一条直线上时，皮尔逊相关系数等于 1 或-1;两个变量之间没有线性关系时， 皮尔逊相关系数为 0。<br>那么两变量间的皮尔逊相关系数可通过以下公式(1)计算:<br>$\rho(X, Y)&#x3D;\frac{\operatorname{cov}(X, Y)}{\sigma_X \sigma_Y}&#x3D;\frac{E\left[\left(X-\mu_X\right)\left(Y-\mu_Y\right)\right]}{\sqrt{\sum_{i&#x3D;1}^n\left(X_i-\mu_X\right)^2} \sqrt{\sum_{i&#x3D;1}^n\left(Y_i-\mu_Y\right)}}$<br>\begin{equation}<br>\rho(X, Y)&#x3D;\frac{\operatorname{cov}(X, Y)}{\sigma_X \sigma_Y}&#x3D;\frac{E\left[\left(X-\mu_X\right)\left(Y-\mu_Y\right)\right]}{\sqrt{\sum_{i&#x3D;1}^n\left(X_i-\mu_X\right)^2} \sqrt{\sum_{i&#x3D;1}^n\left(Y_i-\mu_Y\right)}}<br>\end{equation}<br>\rho(X, Y)&#x3D;\frac{\operatorname{cov}(X, Y)}{\sigma_X \sigma_Y}&#x3D;\frac{E\left[\left(X-\mu_X\right)\left(Y-\mu_Y\right)\right]}{\sqrt{\sum_{i&#x3D;1}^n\left(X_i-\mu_X\right)^2} \sqrt{\sum_{i&#x3D;1}^n\left(Y_i-\mu_Y\right)}}<br>$\rho(X, Y)&#x3D;\frac{\operatorname{cov}(X, Y)}{\sigma_X \sigma_Y}&#x3D;\frac{E\left[\left(X-\mu_X\right)\left(Y-\mu_Y\right)\right]}{\sqrt{\sum_{i&#x3D;1}^n\left(X_i-\mu_X\right)^2} \sqrt{\sum_{i&#x3D;1}^n\left(Y_i-\mu_Y\right)}}$</p>
+<p>3.3.2 熵值法降维</p>
+<p>  熵是热力学的一个物理概念，是系统混乱度(或无序度)的量度。熵越大说明系统越<br>混乱，携带的信息越少，熵越小说明系统越有序，携带的信息越多。根据熵的特性，可以<br>通过计算熵值来表示一个随机系统的无序程度，也可以用熵值来判断一个指标的离散程<br>度。<br>熵值法的一般步骤可以表述为:数据标准化、数据预处理、计算熵值和计算权重。<br>我们采用熵值法降维的方法对附件“Molecular_Descriptor.xlsx”和“ERα_activity.xlsx” 中的特征进行权值计算，结果如下图 3-4 所示:<br>由图示可以看出，特征值的权重逐渐下降，权值是指加权平均数中的每个数的频数， 因此，在 1974 个化合物的 729 个分子描述符信息中，前 30 个特征的权值较大，说明对生 物活性的影响较大，具有一定的代表性，因此，采用 python 语言对熵值法的前 30 个特征 选择进行实现，结果如下图 3-4 所示<br>如上图 3-5 所示，在熵值法降维中，前 30 个对生物活性具有显著影响的分子描述符(即 变量)之间的正相关性较强，普遍呈现绿色(绿色表示正相关性，本身之间的相关性为 1)， 负相关性的表示比较弱，代表性不是很强。另外，熵值法降维缺乏各对特征之间的横向比 较，且各特征的权数随样本的变化而变化，权数依赖于样本，在应用上受到一定的限制。 因此采用随机森林降维法弥补该缺点。<br>3.3.3 RF 降维法<br>随机森林(Random Forest，简称 RF)，是一种新兴起的、高度灵活的、基于树的机 器学习算法，该算法利用多棵树的力量来进行决策。森林中的每棵树并不一样，每棵树都 是被随机创造的，每棵树中的每一个节点都是待选特征的一个随机子集，所有树的输出结 果整合起来就是森林最后的输出结果。<br>  随机森林重点是“随机”两个字，它包括两个方面:<br>  训练数据的随机选取。即用于训练单棵树的数据应该是随机、有放回的从全部数据中<br>选取和原始数据集相同的数据量。此要求是为了防止每棵树用于训练的数据一致导致训练<br>出来的每棵树都一样，这样就丢失了构建多棵树的意义。<br>  待选特征的随机选取。使得森林中的各棵树都能够彼此不同，提示系统的多样性，从<br>而提升分类性能。<br>采用随机森林降维法对附件“Molecular_Descriptor.xlsx”和“ERα_activity.xlsx”中的 特征进行处理，并根据变量对生物活性影响的重要性(贡献率)进行排序，排序后每个特 征贡献率所占百分比如下图 3-6 所示:</p>
+<p>图 3-6 所示，对附件“Molecular_Descriptor.xlsx”和“ERα_activity.xlsx”所给的特 征，进行特征贡献率计算并做好排序，在 1974 个化合物的 729 个分子描述符信息中，前 30 个特征对生物活性的贡献率较大，后面的特征贡献率小于 0.006，影响因子较小。</p>
+<p>用 python 语言对随机森林的前 30 个特征选择与降维进行实现，结果如上图 3-7 所示， 该图较好的呈现出了各特征之间的相关性，绿色部分表示各特征之间的正相关，红色部分 表示各特征之间的负相关，颜色程度越深表示相关性越强，RF 降维法的结果显示相关性分 布比较均匀。<br>3.3.4 方案对比<br>由图 3-5 和 3-7 的对比，熵值法整体偏正相关，并且该方法在筛选变量过程中和因变 量 pIC50 无关。综合这两点可知熵值法挑选的 30 组特征不具有代表性，而随机森林特征 选择避免了这两个缺点，因此使用随机森林挑选的 30 个特征更具有代表性。在此基础之 上，本文对随机森林的 30 组变量进行相关性分析，逐一删除了图 3-7 中 30 个特征中相关 性大于 0.85 的 10 个对特征中的一个，最终选择出了 20 组特征作为主要变量。<br>最终筛选的 20 个特征相关性分析图如下图 3-8 所示:</p>
+<p>主客观集成赋权、OPTICS 聚类、XGBoost 集成学习、 Lorenz 曲线、帕累托分析法、lightgbm-Multi logistic、ARMA 模型</p>
 
       </div>
       <div class="post-tags-categories">
@@ -836,7 +888,7 @@ pca_new <span class="token operator">=</span> pca<span class="token punctuation"
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2022/09/30/yi-chuan-suan-fa-qiu-jie-wen-ti/" target="_blank" title="遗传算法求解问题">http://innocabroad.github.io/2022/09/30/yi-chuan-suan-fa-qiu-jie-wen-ti/</a>
+    <a href="/2022/09/30/suan-fa-wen-ti-qiu-jie/" target="_blank" title="算法-问题求解">http://innocabroad.github.io/2022/09/30/suan-fa-wen-ti-qiu-jie/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
