@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>分类: 数学建模 | innoc abroad</title>
+  <title>数据降维--因子分析 | innoc abroad</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -589,163 +589,462 @@
 </header>
         <!-- 内容区域 -->
         
-
-<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
-<div class="bg-light-floor-categoryDetail" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -3;"></div>
-
-<div class="category-header"  style="background-image:url('https://pic3.zhimg.com/80/v2-98dcd81cb0d1fee52a807c13cedb8338_1440w.jpg?source=1940ef5c')">
-  <div class="category-header-title">
-    category
-  </div>
-  <div class="category-header-desc">
+ <!-- prismjs 代码高亮 -->
+ 
     
-      <span class="title" id="category-header-desc"></span>
-      <script>
-  function typedFn() {
-    const el = '#category-header-desc';
-    const type = 'categoryDetail';
-    let desc = '心交别我西京去，愁满春魂不易醒。从此无人访穷病，马蹄车辙草青青。'
-    var typed = new Typed(el, {
-      strings: [desc],
-      startDelay: 100,
-      typeSpeed: 100,
-      loop: true,
-      backSpeed: 50,
-      showCursor: true
-    });
-  }
-  typedFn();
-</script>
+    <link href="/js/prism/prism-line-numbers.css" rel="stylesheet">
+    
+        <link href="/js/prism/prism.min.css" rel="stylesheet">
+    
+
+    <style>
+        pre[class*="language-"] {
+            overflow-y: hidden;
+        }
+        .line-numbers .line-numbers-rows {
+            border: none;
+        }
+    </style>
+  
+
+
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+
+
+  <!-- 文章详情页顶部图片和标题 -->
+
+
+
+
+<div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;background-image:url('https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg')">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
+  
+  <div class="post-detail-header_info-box">
+    <div class="title-box">
+      <span class="title">
+        数据降维--因子分析
+      </span>
+    </div>
+    
+    
       
-  </div>
-  <div class="mask-box"></div>
-</div>
+        <span class="post-detail-header_date">
+          <i class="fas fa-calendar"></i> 发表于：2022-10-01 |
+        </span>
+      
 
-
-<div class="category">
-  <div class="category-name">
-    <div class="name" style="background-color: #FFF;">数学建模 分类</div>
-  </div>
-  <!-- 每一篇文章卡片 -->
-  <!-- hash算法 -->
-
-<section class="posts">
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-10-01</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/10/01/shu-ju-jiang-wei-yin-zi-fen-xi/">数据降维--因子分析</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90/" rel="tag">因子分析</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E9%99%8D%E7%BB%B4/" rel="tag">数据降维</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/10/01/shu-ju-jiang-wei-yin-zi-fen-xi/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      
+        <span class="post-detail-header_categories">
+          <i class="iconfont iconbookmark1"></i> 分类：
+          
+            <a href="/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" class="post-detail-header_category">
+              数学建模
             </a>
-          </div>
-          <div class="post-content">
-            参考：https://www.heywhale.com/mw/project/5e4fc6580e2b66002c1fac1b
-因子分析(factor analysis)可以通过spss进行因子分析是指研究从变量群中提取共性因子的统计技术。
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/10/01/shu-ju-jiang-wei-yin-zi-fen-xi/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/10/01/shu-ju-jiang-wei-yin-zi-fen-xi/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
-    </article>
+          
+        </span>
+      
+
+      
+        <div class="post-detail-header_wordcount">
+          <span class="totalcount">
+            <i class="fas fa-file-text-o"></i> 字数统计: 2.1k |
+          </span>
   
+          <span class="min2read">
+            <i class="fas fa-clock"></i> 阅读时长: 7分钟 |
+          </span>
+  
+          
+        </div>
+      
     
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-09-16</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/09/16/shu-ju-yu-chu-li-tip/">数据预处理tip</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" rel="tag">数学建模</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a>
+  </div>
+  
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
 </div>
 
 
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/09/16/shu-ju-yu-chu-li-tip/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+
+
+
+<div class="post-detail-content row justify-position" 
+  style="padding-top: 0px;">
+  <div class="main-content">
+    <article class="post post-detail">
+      <div class="post-content">
+        <p>参考：<a target="_blank" rel="noopener" href="https://www.heywhale.com/mw/project/5e4fc6580e2b66002c1fac1b">https://www.heywhale.com/mw/project/5e4fc6580e2b66002c1fac1b</a></p>
+<h1 id="因子分析-factor-analysis"><a href="#因子分析-factor-analysis" class="headerlink" title="因子分析(factor analysis)"></a>因子分析(factor analysis)</h1><p>可以通过spss进行因子分析<br>是指研究从变量群中提取共性因子的统计技术。 因子分析是简化、分析高维数据的一种统计方法。<br>因子分析又存在两个方向，一个是探索性因子分析（exploratory factor analysis）。另一个是验证性因子分析（confirmatory factor analysis）。</p>
+<p>探索性因子分析是先不假定一堆自变量背后到底有几个因子以及关系，而是我们通过这个方法去寻找因子及关系。</p>
+<p>验证性因子分析是假设一堆自变量背后有几个因子，试图验证这种假设是否正确。</p>
+<p>因子分析有两个核心问题，一是如何构造因子变量，二是如何对因子变量进行命名解释。</p>
+<h2 id="因子分析的一般步骤"><a href="#因子分析的一般步骤" class="headerlink" title="因子分析的一般步骤"></a>因子分析的一般步骤</h2><ol>
+<li><p>将原始数据标准化处理 X</p>
+</li>
+<li><p>计算相关矩阵C</p>
+</li>
+<li><p>计算相关矩阵C的特征值 r 和特征向量 U</p>
+</li>
+</ol>
+<p>4.确定公共因子个数k</p>
+<ol start="5">
+<li><p>构造初始因子载荷矩阵,其中U为r的特征向量</p>
+</li>
+<li><p>建立因子模型</p>
+</li>
+<li><p>对初始因子载荷矩阵A进行旋转变换，旋转变换是使初始因子载荷矩阵结构简化，关系明确，使得因子变量更具有可解释性，如果初始因子不相关，可以用方差极大正交旋转，如果初始因子间相关，可以用斜交旋转，进过旋转后得到比较理想的新的因子载荷矩阵A’.</p>
+</li>
+<li><p>将因子表示成变量的线性组合，其中的系数可以通过最小二乘法得到.</p>
+</li>
+<li><p>计算因子得分.</p>
+</li>
+</ol>
+<h1 id="参考代码-https-www-heywhale-com-mw-project-5ec1913cfb82740098cfce44"><a href="#参考代码-https-www-heywhale-com-mw-project-5ec1913cfb82740098cfce44" class="headerlink" title="参考代码 https://www.heywhale.com/mw/project/5ec1913cfb82740098cfce44"></a>参考代码 <a target="_blank" rel="noopener" href="https://www.heywhale.com/mw/project/5ec1913cfb82740098cfce44">https://www.heywhale.com/mw/project/5ec1913cfb82740098cfce44</a></h1><h2 class="bamboo-h " id="随机森林降维度">随机森林降维度</h2><br/>
+
+<p>随机森林可以降维度<br>还要用Pearson 相关分析逐一剔除相关性较强的 10 组变量，最后取前 20 个特征作为主要变量。<br><img src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/%E6%88%AA%E5%B1%8F2022-10-0117.11.37.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/%E6%88%AA%E5%B1%8F2022-10-0117.11.37.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p>3.3 数据降维 参考文献<img src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/D21101080006.pdf" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/D21101080006.pdf" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p>3.3.1 皮尔逊相关分析<br>皮尔逊相关也称为积差相关(或积矩相关)是英国统计学家皮尔逊于 20 世纪提出的 一种计算直线相关的方法。<br>假设有两个变量 X、Y，皮尔逊相关系数则用于度量 X 和 Y 之间的线性相关程度，其 值介于-1 与 1 之间。这种线性相关直观表述为:随着 X 增大，Y 是否同时增大或者减小; 当二者分布在一条直线上时，皮尔逊相关系数等于 1 或-1;两个变量之间没有线性关系时， 皮尔逊相关系数为 0。<br>那么两变量间的皮尔逊相关系数可通过以下公式(1)计算:<br>$\rho(X, Y)&#x3D;\frac{\operatorname{cov}(X, Y)}{\sigma_X \sigma_Y}&#x3D;\frac{E\left[\left(X-\mu_X\right)\left(Y-\mu_Y\right)\right]}{\sqrt{\sum_{i&#x3D;1}^n\left(X_i-\mu_X\right)^2} \sqrt{\sum_{i&#x3D;1}^n\left(Y_i-\mu_Y\right)}}$<br>\begin{equation}<br>\rho(X, Y)&#x3D;\frac{\operatorname{cov}(X, Y)}{\sigma_X \sigma_Y}&#x3D;\frac{E\left[\left(X-\mu_X\right)\left(Y-\mu_Y\right)\right]}{\sqrt{\sum_{i&#x3D;1}^n\left(X_i-\mu_X\right)^2} \sqrt{\sum_{i&#x3D;1}^n\left(Y_i-\mu_Y\right)}}<br>\end{equation}<br>\rho(X, Y)&#x3D;\frac{\operatorname{cov}(X, Y)}{\sigma_X \sigma_Y}&#x3D;\frac{E\left[\left(X-\mu_X\right)\left(Y-\mu_Y\right)\right]}{\sqrt{\sum_{i&#x3D;1}^n\left(X_i-\mu_X\right)^2} \sqrt{\sum_{i&#x3D;1}^n\left(Y_i-\mu_Y\right)}}<br>$\rho(X, Y)&#x3D;\frac{\operatorname{cov}(X, Y)}{\sigma_X \sigma_Y}&#x3D;\frac{E\left[\left(X-\mu_X\right)\left(Y-\mu_Y\right)\right]}{\sqrt{\sum_{i&#x3D;1}^n\left(X_i-\mu_X\right)^2} \sqrt{\sum_{i&#x3D;1}^n\left(Y_i-\mu_Y\right)}}$</p>
+<h2 class="bamboo-h " id="熵值法降维">熵值法降维</h2><br/>
+
+<p>  熵是热力学的一个物理概念，是系统混乱度(或无序度)的量度。熵越大说明系统越<br>混乱，携带的信息越少，熵越小说明系统越有序，携带的信息越多。根据熵的特性，可以<br>通过计算熵值来表示一个随机系统的无序程度，也可以用熵值来判断一个指标的离散程<br>度。<br>熵值法的一般步骤可以表述为:数据标准化、数据预处理、计算熵值和计算权重。<br>我们采用熵值法降维的方法对附件“Molecular_Descriptor.xlsx”和“ERα_activity.xlsx” 中的特征进行权值计算，结果如下图 3-4 所示:<br>由图示可以看出，特征值的权重逐渐下降，权值是指加权平均数中的每个数的频数， 因此，在 1974 个化合物的 729 个分子描述符信息中，前 30 个特征的权值较大，说明对生 物活性的影响较大，具有一定的代表性，因此，采用 python 语言对熵值法的前 30 个特征 选择进行实现，结果如下图 3-4 所示<br>如上图 3-5 所示，在熵值法降维中，前 30 个对生物活性具有显著影响的分子描述符(即 变量)之间的正相关性较强，普遍呈现绿色(绿色表示正相关性，本身之间的相关性为 1)， 负相关性的表示比较弱，代表性不是很强。另外，熵值法降维缺乏各对特征之间的横向比 较，且各特征的权数随样本的变化而变化，权数依赖于样本，在应用上受到一定的限制。 因此采用随机森林降维法弥补该缺点。</p>
+<h2 class="bamboo-h " id="随机森林降维">随机森林降维</h2><br/>
+<p>参考代码：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/416520778?utm_medium=social&amp;utm_oi=629375409599549440">https://zhuanlan.zhihu.com/p/416520778?utm_medium=social&amp;utm_oi=629375409599549440</a><br>随机森林(Random Forest，简称 RF)，是一种新兴起的、高度灵活的、基于树的机 器学习算法，该算法利用多棵树的力量来进行决策。森林中的每棵树并不一样，每棵树都 是被随机创造的，每棵树中的每一个节点都是待选特征的一个随机子集，所有树的输出结 果整合起来就是森林最后的输出结果。<br>随机森林重点是“随机”两个字，它包括两个方面:<br>训练数据的随机选取。即用于训练单棵树的数据应该是随机、有放回的从全部数据中<br>选取和原始数据集相同的数据量。此要求是为了防止每棵树用于训练的数据一致导致训练<br>出来的每棵树都一样，这样就丢失了构建多棵树的意义。<br> 选特征的随机选取。使得森林中的各棵树都能够彼此不同，提示系统的多样性，从<br>而提升分类性能。<br>采用随机森林降维法对附件“Molecular_Descriptor.xlsx”和“ERα_activity.xlsx”中的 特征进行处理，并根据变量对生物活性影响的重要性(贡献率)进行排序，排序后每个特 征贡献率所占百分比如下图 3-6 所示:</p>
+<p>图 3-6 所示，对附件“Molecular_Descriptor.xlsx”和“ERα_activity.xlsx”所给的特 征，进行特征贡献率计算并做好排序，在 1974 个化合物的 729 个分子描述符信息中，前 30 个特征对生物活性的贡献率较大，后面的特征贡献率小于 0.006，影响因子较小。</p>
+<p>用 python 语言对随机森林的前 30 个特征选择与降维进行实现，结果如上图 3-7 所示， 该图较好的呈现出了各特征之间的相关性，绿色部分表示各特征之间的正相关，红色部分 表示各特征之间的负相关，颜色程度越深表示相关性越强，RF 降维法的结果显示相关性分 布比较均匀。</p>
+<h2 class="bamboo-h " id="主成分分析降维">主成分分析降维</h2><br/>
+
+<h2 class="bamboo-h " id="方案对比">方案对比</h2><br/>
+<p>由图 3-5 和 3-7 的对比，熵值法整体偏正相关，并且该方法在筛选变量过程中和因变 量 pIC50 无关。综合这两点可知熵值法挑选的 30 组特征不具有代表性，而随机森林特征 选择避免了这两个缺点，因此使用随机森林挑选的 30 个特征更具有代表性。在此基础之 上，本文对随机森林的 30 组变量进行相关性分析，逐一删除了图 3-7 中 30 个特征中相关 性大于 0.85 的 10 个对特征中的一个，最终选择出了 20 组特征作为主要变量。</p>
+
+      </div>
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E9%99%8D%E7%BB%B4/" class="">
+              数据降维
             </a>
-          </div>
-          <div class="post-content">
-            优秀论文怎么写？？？https://www.heywhale.com/mw/project/5daec44675df5c002b2137cc
-数据分析&amp;预处理附件？给出了在多个地点采集得到的?组数据，每组文件包含了在同一地点采集到的
-          </div>
+          
+            <a href="/tags/%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90/" class="">
+              因子分析
+            </a>
+          
         </div>
-        <div class="post-more">
-          <a href="/2022/09/16/shu-ju-yu-chu-li-tip/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
+        
       </div>
-      <div class="post-img">
-        <a href="/2022/09/16/shu-ju-yu-chu-li-tip/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/006VlWHuly1h45cmx9epqj31zj2za1l5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>innocence</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/2022/10/01/shu-ju-jiang-wei-yin-zi-fen-xi/" target="_blank" title="数据降维--因子分析">http://innocabroad.github.io/2022/10/01/shu-ju-jiang-wei-yin-zi-fen-xi/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
     </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <!-- 文章详情页的上一页和下一页 -->
+<div class="post-nav">
+
+
+
+
+
   
-</section>
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/src=http---img-blog.csdn.net-20171010005726856&refer=http---img-blog.csdn.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto.webp" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/innocabroad/imageRepository/img/src=http---img-blog.csdn.net-20171010005726856&refer=http---img-blog.csdn.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+    </div>
+    <a href="/2022/09/30/suan-fa-wen-ti-qiu-jie/" class="post-nav-link">
+      <div class="title">
+        下一篇: <i class="fas fa-angle-right"></i>
+        <div class="title-text">算法-问题求解</div>
+      </div>
+      <!-- <div class="content">
+        算法-问题求解
+
+什么是参数优化？举个例子，对于模型y&#x3D;f(x)&#x3D;ax+b，附件中会给定x和y的值。
+      </div> -->
+    </a>
+  </div>
+
 </div>
-<div class="w-70">
+
+    
+    
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+<!-- 文章详情页的分享 -->
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+    
+    <!-- 评论 -->
+    <!-- 评论 -->
+
+  <div id="myComment">
+    
+      <div id="gitment-container"></div>
+
+    
+  </div>
+
+<!-- comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
+
+
+  </div>
+
+  <!-- 目录 -->
+  <!-- 文章详情页右侧目录 -->
+
+  <div class="toc-aside">
+    <div class="toc-main">
+      <div class="toc-aside-title">
+        <i class="fas fa-list-ul" aria-hidden="true"></i><span>本文目录</span>
+        
+          <div class="toc-open-close">本文目录</div>
+        
+      </div>
+      <div class="toc-content">
+        <div class="toc"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 手机端目录按钮 -->
+  <div id="toc-mobile-btn">
+    <i class="fas fa-list-ul" aria-hidden="true"></i>
+  </div>
+
+
+<script>
+  function closeToc(init) {
+    $(".toc-aside").css({'width': 0, 'padding': 0, 'transition': init ?  'noe' : 'width 0.3s' });
+    $(".toc-content").css({'width': 0});
+    $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
+    $(".main-content").css({'width': '75%', 'margin-left': 'auto', 'margin-right': 'auto',});
+  };
+  function openToc() {
+    $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
+    $(".toc-aside").css({'width': '300px', 'padding': '0 10px', 'transition': 'width 0.3s'});
+    $(".toc-content").css({'width': '300px'});
+    $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
+  }
+  function openBtnClickFn () {
+    let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
+    let open = eval('' || 'true');
+    openOrCloseBtn.click(function() {
+      if (open) {
+        closeToc();
+        open = false;
+      } else {
+        openToc();
+        open = true;
+      }
+    });
+  };
+  openBtnClickFn();
+  initCloseTocWidth(true);
+
+  function initCloseTocWidth(init) {
+    if (window.innerWidth >= 992) {
+      let isClose = false;
+      isClose && closeToc(init)
+    }
+  }
+
+  document.addEventListener('pjax:complete', function () {
+    $(".toc-aside").css({'transition': 'no'});
+  })
+  document.addEventListener('pjax:complete', function () {
+    openBtnClickFn();
+  })
   
+</script>
+
+  <!-- 图片放大 Wrap images with fancybox support -->
+  <script src="/js/wrapImage.js"></script>
 </div>
+
+<!-- 文章详情页背景图 -->
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"
+	:style="{'background-color': bgColor ? bgColor : 'transparent'}">
+	<transition-group tag="ul" :name="names">
+		<li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+			<img :src="image" class="bg-swiper-img no-lazy">
+		</li>
+	</transition-group>
+</div>
+<script>
+	var vm = new Vue({
+		el: '#appBgSwiper',
+		data: {
+			names: '' || 'fade' || 'fade', // translate-fade fade
+			mark: 0,
+			img: [],
+			bgColor: '',
+			time: null
+		},
+		methods: {   //添加方法
+			change(i, m) {
+				if (i > m) {
+					// this.names = 'fade';
+				} else if (i < m) {
+					// this.names = 'fade';
+				} else {
+					return;
+				}
+				this.mark = i;
+			},
+			prev() {
+				// this.names = 'fade';
+				this.mark--;
+				if (this.mark === -1) {
+					this.mark = 3;
+					return
+				}
+			},
+			next() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			autoPlay() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			play() {
+				let bgImgDelay = '' || '180000'
+				let delay = parseInt(bgImgDelay) || 180000;
+				this.time = setInterval(this.autoPlay, delay);
+			},
+			enter() {
+				clearInterval(this.time);
+			},
+			leave() {
+				this.play();
+			}
+		},
+		created() {
+			this.play()
+		},
+		beforeDestroy() {
+			clearInterval(this.time);
+		},
+		mounted() {
+			let prop = '' || '';
+			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
+			if (isImg) {
+				let img = prop.split(',');
+				let configRoot = '/'
+				let arrImg = [];
+				img.forEach(el => {
+					var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+					var objExp = new RegExp(Expression);
+
+					if (objExp.test(el)) {
+						// http or https
+						arrImg.push(el);
+					} else {
+						// 非http or https开头
+						// 本地文件
+						let firstStr = el.charAt(0);
+						if (firstStr == '/') {
+							el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+						}
+						el = configRoot + el;
+						arrImg.push(el);
+					}
+				})
+				this.img = arrImg;
+			} else {
+				this.bgColor = prop;
+			}
+		}
+	})
+</script>
+
+<style>
+	.bg-swiper-box {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bg-swiper-img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+
+
+
+  <script>
+  function loadMermaid() {
+    if (document.getElementsByClassName('mermaid').length) {
+      if (window.mermaidJsLoad) mermaid.init()
+      else {
+        loadScript('https://unpkg.com/mermaid/dist/mermaid.min.js').then(() => {
+          window.mermaidJsLoad = true
+          mermaid.initialize({
+            theme: 'default',
+          })
+          if ('true') {
+            mermaid.init();
+          }
+        })
+      }
+    }
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    loadMermaid();
+  })
+
+  document.addEventListener('pjax:complete', function () {
+    loadMermaid();
+  })
+  
+</script>
+
 
       </main>
     </div>
